@@ -61,7 +61,7 @@ function CompanyFormationContent() {
         <section className="relative overflow-hidden min-h-130 lg:min-h-150 flex items-center">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
-            style={{ backgroundImage: "url('/images/costanera-asuncion.webp')" }}
+            style={{ backgroundImage: "url('/images/palacio-gobierno.jpg')" }}
           />
           <div className="absolute inset-0 bg-black/60" />
 
