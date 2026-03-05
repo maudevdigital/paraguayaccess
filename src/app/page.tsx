@@ -1,6 +1,7 @@
 "use client";
 
-import { LanguageProvider } from "@/lib/i18n/LanguageContext";
+import { useEffect } from "react";
+import { LanguageProvider, useLanguage } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -12,9 +13,15 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-export default function Home() {
+function HomeContent() {
+  const { t } = useLanguage();
+
+  useEffect(() => {
+    document.title = t.pageTitle;
+  }, [t.pageTitle]);
+
   return (
-    <LanguageProvider>
+    <>
       <Header />
       <main>
         <Hero />
@@ -27,6 +34,14 @@ export default function Home() {
       </main>
       <Footer />
       <WhatsAppButton />
+    </>
+  );
+}
+
+export default function Home() {
+  return (
+    <LanguageProvider>
+      <HomeContent />
     </LanguageProvider>
   );
 }

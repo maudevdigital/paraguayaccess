@@ -13,7 +13,7 @@ export default function CTA() {
         style={{ backgroundImage: "url('/images/palacio-lopez.jpg')" }}
       />
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-linear-to-br from-blue-950/85 via-blue-900/80 to-indigo-950/85" />
+      <div className="absolute inset-0 bg-linear-to-br from-black/65 via-slate-900/55 to-black/65" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <div className="relative rounded-3xl bg-white/10 backdrop-blur-md border border-white/10 p-12 lg:p-20 shadow-2xl">
@@ -28,13 +28,13 @@ export default function CTA() {
 
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="mailto:info@paraguayaccess.com"
+                href="mailto:advisory@paraguayaccess.com"
                 className="inline-flex items-center rounded-xl bg-white px-8 py-4 text-base font-semibold text-blue-800 shadow-lg hover:bg-blue-50 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
               >
                 {t.cta.button}
               </a>
               <a
-                href="mailto:info@paraguayaccess.com"
+                href="mailto:advisory@paraguayaccess.com"
                 className="inline-flex items-center gap-2 rounded-xl border-2 border-white/30 px-8 py-4 text-base font-semibold text-white hover:bg-white/10 transition-all duration-300"
               >
                 {t.cta.buttonSecondary}

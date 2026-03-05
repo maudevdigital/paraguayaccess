@@ -7,11 +7,15 @@ export default function Process() {
 
   return (
     <section
-      className="relative py-24 lg:py-32 overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed"
-      style={{ backgroundImage: "url('/images/asuncion-skyline.jpg')" }}
+      className="relative py-24 lg:py-32 overflow-hidden"
     >
+      {/* Background image with zoom on city */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed scale-110"
+        style={{ backgroundImage: "url('/images/asuncion-skyline.jpg')" }}
+      />
       {/* Dark gradient overlay for readability */}
-      <div className="absolute inset-0 bg-linear-to-br from-blue-950/80 via-blue-900/70 to-indigo-950/80" />
+      <div className="absolute inset-0 bg-linear-to-br from-black/70 via-slate-900/60 to-black/70" />
 
       {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

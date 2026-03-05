@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useCallback } from "react";
+import React, { createContext, useContext, useState, useCallback, useEffect } from "react";
 import en, { type Dictionary } from "./dictionaries/en";
 import es from "./dictionaries/es";
 import pt from "./dictionaries/pt";
@@ -27,6 +27,8 @@ export const locales: LocaleInfo[] = [
   { code: "el", name: "Ελληνικά", flag: "🇬🇷" },
 ];
 
+const validLocales: Set<string> = new Set(locales.map((l) => l.code));
+
 const dictionaries: Record<Locale, Dictionary> = { en, es, pt, fr, it, ru, el };
 
 interface LanguageContextType {
@@ -44,9 +46,27 @@ const LanguageContext = createContext<LanguageContextType>({
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("en");
 
+  // Restore saved locale on mount
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("locale");
+      if (saved && validLocales.has(saved)) {
+        setLocaleState(saved as Locale);
+        document.documentElement.lang = saved;
+      }
+    } catch {
+      // localStorage unavailable (SSR / private mode)
+    }
+  }, []);
+
   const setLocale = useCallback((newLocale: Locale) => {
     setLocaleState(newLocale);
     document.documentElement.lang = newLocale;
+    try {
+      localStorage.setItem("locale", newLocale);
+    } catch {
+      // localStorage unavailable
+    }
   }, []);
 
   const t = dictionaries[locale];

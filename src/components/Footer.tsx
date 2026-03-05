@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <a href="#" className="flex items-center gap-2 mb-6">
+            <a href="/" className="flex items-center gap-2 mb-6">
               <div className="h-10 w-10 rounded-lg bg-linear-to-br from-blue-500 to-blue-700 flex items-center justify-center">
                 <span className="text-white font-bold text-lg">P</span>
               </div>
@@ -45,17 +45,17 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="#services" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href="/residency" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   {t.footer.residency}
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href="/accounting" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   {t.footer.accountingTax}
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href="/company-formation" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   {t.footer.companyFormation}
                 </a>
               </li>
@@ -103,11 +103,11 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a href="mailto:info@paraguayaccess.com" className="flex items-center gap-3 text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href="mailto:advisory@paraguayaccess.com" className="flex items-center gap-3 text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                   </svg>
-                  {t.footer.email}
+                  {t.footer.advisoryEmail}
                 </a>
               </li>
               <li>

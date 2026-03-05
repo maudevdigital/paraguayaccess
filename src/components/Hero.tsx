@@ -54,11 +54,11 @@ export default function Hero() {
     <section className="relative overflow-hidden">
       {/* Parallax background */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
         style={{ backgroundImage: "url('/images/paraguay-flag.jpg')" }}
       />
       {/* Overlay */}
-      <div className="absolute inset-0 bg-linear-to-b from-blue-950/80 via-blue-950/65 to-blue-950/75" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/55 to-black/65" />
 
       {/* Main content */}
       <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 sm:pt-36 sm:pb-24 lg:pt-40 lg:pb-28">
