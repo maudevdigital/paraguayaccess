@@ -81,7 +81,7 @@ function ResidencyContent() {
         <section className="relative overflow-hidden min-h-130 lg:min-h-150 flex items-center">
           {/* Background Image with parallax */}
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed scale-110"
             style={{ backgroundImage: "url('/images/paraguay-residencia.webp')" }}
           />
           {/* Dark overlay */}

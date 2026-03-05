@@ -9,7 +9,7 @@ export default function CTA() {
     <section id="contact" className="relative py-24 lg:py-32 overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed scale-110"
         style={{ backgroundImage: "url('/images/palacio-lopez.jpg')" }}
       />
       {/* Dark overlay */}
