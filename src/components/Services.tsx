@@ -21,9 +21,9 @@ export default function Services() {
   const { t } = useLanguage();
 
   const services = [
-    { ...t.services.residency, icon: serviceIcons[0], gradient: "from-blue-600 to-blue-700" },
-    { ...t.services.accounting, icon: serviceIcons[1], gradient: "from-indigo-600 to-blue-700" },
-    { ...t.services.companyFormation, icon: serviceIcons[2], gradient: "from-blue-700 to-indigo-700" },
+    { ...t.services.residency, icon: serviceIcons[0], gradient: "from-blue-600 to-blue-700", href: "/residency" },
+    { ...t.services.accounting, icon: serviceIcons[1], gradient: "from-indigo-600 to-blue-700", href: "/accounting" },
+    { ...t.services.companyFormation, icon: serviceIcons[2], gradient: "from-blue-700 to-indigo-700", href: "/company-formation" },
   ];
 
   return (
@@ -85,7 +85,7 @@ export default function Services() {
 
               {/* Learn More Link */}
               <a
-                href="#contact"
+                href={service.href}
                 className="inline-flex items-center text-sm font-semibold text-blue-700 hover:text-blue-800 transition-all"
               >
                 {t.services.learnMore}
