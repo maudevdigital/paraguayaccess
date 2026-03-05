@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import Image from "next/image";
+
 import { LanguageProvider, useLanguage } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -59,12 +59,9 @@ function CompanyFormationContent() {
       <main>
         {/* Hero Section */}
         <section className="relative overflow-hidden min-h-130 lg:min-h-150 flex items-center">
-          <Image
-            src="/images/palacio-gobierno.jpg"
-            alt=""
-            fill
-            className="object-cover object-center"
-            priority
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
+            style={{ backgroundImage: "url('/images/palacio-gobierno.jpg')" }}
           />
           <div className="absolute inset-0 bg-black/60" />
 
@@ -237,13 +234,11 @@ function CompanyFormationContent() {
 
         {/* CTA Section */}
         <section className="relative overflow-hidden py-20 lg:py-28">
-          <Image
-            src="/images/apreton-manos-trabajo-ayuda.jpg"
-            alt=""
-            fill
-            className="object-cover"
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
+            style={{ backgroundImage: "url('/images/apreton-manos-trabajo-ayuda.jpg')" }}
           />
-          <div className="absolute inset-0 bg-linear-to-r from-black/65 via-slate-900/55 to-black/65" />
+          <div className="absolute inset-0 bg-linear-to-br from-black/65 via-slate-900/55 to-black/65" />
 
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">

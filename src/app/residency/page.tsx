@@ -79,13 +79,10 @@ function ResidencyContent() {
       <main>
         {/* Hero Section */}
         <section className="relative overflow-hidden min-h-130 lg:min-h-150 flex items-center">
-          {/* Background Image */}
-          <Image
-            src="/images/paraguay-residencia.webp"
-            alt=""
-            fill
-            className="object-cover object-top sm:object-center"
-            priority
+          {/* Background Image with parallax */}
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
+            style={{ backgroundImage: "url('/images/paraguay-residencia.webp')" }}
           />
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/60" />
