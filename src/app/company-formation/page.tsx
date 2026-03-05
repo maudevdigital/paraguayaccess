@@ -60,7 +60,7 @@ function CompanyFormationContent() {
         {/* Hero Section */}
         <section className="relative overflow-hidden min-h-130 lg:min-h-150 flex items-center">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed scale-110"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
             style={{ backgroundImage: "url('/images/costanera-asuncion.webp')" }}
           />
           <div className="absolute inset-0 bg-black/60" />
@@ -235,7 +235,7 @@ function CompanyFormationContent() {
         {/* CTA Section */}
         <section className="relative overflow-hidden py-20 lg:py-28">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed scale-110"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
             style={{ backgroundImage: "url('/images/apreton-manos-trabajo-ayuda.jpg')" }}
           />
           <div className="absolute inset-0 bg-linear-to-br from-black/65 via-slate-900/55 to-black/65" />

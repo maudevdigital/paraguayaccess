@@ -11,7 +11,7 @@ export default function Process() {
     >
       {/* Background image with zoom on city */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed scale-110"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
         style={{ backgroundImage: "url('/images/asuncion-skyline.jpg')" }}
       />
       {/* Dark gradient overlay for readability */}
