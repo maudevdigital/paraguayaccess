@@ -28,13 +28,13 @@ export default function CTA() {
 
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="mailto:advisory@paraguayaccess.com"
+                href="/contact"
                 className="inline-flex items-center rounded-xl bg-white px-8 py-4 text-base font-semibold text-blue-800 shadow-lg hover:bg-blue-50 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
               >
                 {t.cta.button}
               </a>
               <a
-                href="mailto:advisory@paraguayaccess.com"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-xl border-2 border-white/30 px-8 py-4 text-base font-semibold text-white hover:bg-white/10 transition-all duration-300"
               >
                 {t.cta.buttonSecondary}

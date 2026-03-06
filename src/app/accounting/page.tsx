@@ -90,7 +90,7 @@ function AccountingContent() {
               </ul>
 
               <a
-                href="mailto:advisory@paraguayaccess.com"
+                href="/contact"
                 className="mt-10 inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg shadow-blue-900/20 text-base"
               >
                 {a.hero.cta}
@@ -234,7 +234,7 @@ function AccountingContent() {
               {a.cta.subtitle}
             </p>
             <a
-              href="mailto:advisory@paraguayaccess.com"
+              href="/contact"
               className="mt-8 inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg text-base"
             >
               {a.cta.button}

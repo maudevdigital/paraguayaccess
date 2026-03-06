@@ -385,29 +385,29 @@
       title: "Frequently Asked Questions",
       items: [
         {
-          question: "Do I need to deposit $5,000 to get the residency?",
+          question: "Is a $5,000 bank deposit still required for residency?",
           answer:
-            "No. The process for obtaining residency in Paraguay changed at the end of 2022. Today, it is no longer necessary to deposit any amount in a bank.",
+            "Not anymore. Paraguay updated its residency regulations at the end of 2022, completely removing the mandatory bank deposit. Today, you can begin the application process without setting aside any funds in a local bank account.",
         },
         {
-          question: "Can I do everything on one trip?",
+          question: "Can I complete everything during a single trip?",
           answer:
-            "Yes, in most cases you can complete the entire temporary residency process in a single short trip of 5 to 7 business days.",
+            "Yes. Thanks to regulatory changes that took effect in September 2024, it is once again possible to submit both your residency application and your cédula (ID card) request in one short visit to Paraguay.",
         },
         {
-          question: "Are you lawyers?",
+          question: "Do I need to hire a lawyer for the process?",
           answer:
-            "We are a specialized firm that works with a network of licensed professionals , lawyers, accountants, and sworn translators , to ensure every aspect of your case is handled properly.",
+            "No lawyer is required at any stage. Our team of immigration specialists manages the entire procedure from beginning to end. However, our professional network does include licensed attorneys, and we're happy to involve one if that gives you extra peace of mind.",
         },
         {
-          question: "How long does it take to complete the process?",
+          question: "What is the current timeline to receive my documents?",
           answer:
-            "Temporary residency typically takes 4 to 8 weeks after your visit. Permanent residency with investment takes approximately 10 business days on-site.",
+            "Under current government processing timelines, you can expect to receive both your residency card and national ID card (cédula) within approximately 75 to 80 days from the date of submission.",
         },
         {
-          question: "Do I need to show proof of savings or income?",
+          question: "Does Paraguay require proof of savings or income for residency?",
           answer:
-            "No. Paraguay does not require proof of income or savings for temporary residency. For permanent residency with investment, a minimum investment of 10,000 USD is required.",
+            "No. Paraguay does not impose any economic solvency requirement for granting residency. This applies equally to both temporary and permanent residency. No proof of income, savings, or minimum financial threshold is needed.",
         },
       ],
     },
@@ -625,6 +625,236 @@
         "Contact us today for a free consultation. We'll walk you through the entire process and help you choose the best structure for your goals.",
       button: "Schedule a Consultation",
     },
+  },
+  contactPage: {
+    pageTitle: "Contact Paraguay Access | Get in Touch With Our Team",
+    breadcrumb: { home: "Homepage", contact: "Contact Us" },
+    hero: {
+      title: "Let's Talk About Your Future in Paraguay",
+      subtitle:
+        "Whether you're considering residency, need tax advice, or want to set up a business — we're here to help. Below you'll find how to reach us and what to expect.",
+    },
+    process: {
+      sectionTag: "How It Works",
+      title: "Simple Steps to Get Started",
+      subtitle: "Requesting information or starting a service with us is straightforward. Here's the process:",
+      steps: [
+        {
+          title: "1. Reach Out",
+          description: "Send us an email or a WhatsApp message briefly describing your situation: your nationality, your goals (residency, tax planning, company formation), and any questions you have.",
+        },
+        {
+          title: "2. Free Initial Consultation",
+          description: "Our team will review your message and schedule a complimentary consultation via WhatsApp call or regular phone call to understand your needs in detail.",
+        },
+        {
+          title: "3. Personalized Proposal",
+          description: "Based on our conversation, we'll send you a clear proposal with services, timelines, and fees — no hidden costs, no surprises.",
+        },
+        {
+          title: "4. We Handle Everything",
+          description: "Once you confirm, we take care of the entire process: documents, translations, government filings, and ongoing support until completion.",
+        },
+      ],
+    },
+    methods: {
+      title: "Contact Us Directly",
+      subtitle: "Choose the channel that works best for you. We typically respond within a few hours during business days.",
+      email: {
+        title: "Email",
+        description: "Ideal for detailed inquiries. Describe your situation and goals, and we'll respond with personalized guidance within 24 hours.",
+        value: "advisory@paraguayaccess.com",
+        cta: "Send Email",
+      },
+      whatsapp: {
+        title: "WhatsApp / Phone",
+        description: "Prefer a quick conversation? Message us on WhatsApp or call us directly. Available for text, voice messages, and calls.",
+        value: "+595 992 110 955",
+        cta: "Open WhatsApp",
+      },
+    },
+    info: {
+      title: "What to Include in Your Message",
+      items: [
+        "Your full name and nationality",
+        "The service you're interested in (residency, tax advisory, company formation, etc.)",
+        "Your current situation and goals",
+        "Any specific questions or timeline you have in mind",
+      ],
+      note: "The more details you provide, the more precise and helpful our response will be.",
+    },
+    formCta: {
+      title: "Ready to Take the First Step?",
+      subtitle:
+        "Our team is available to answer your questions and guide you through the process. Initial consultations are always complimentary — no commitment required.",
+      buttonEmail: "Email Us Now",
+      buttonWhatsApp: "WhatsApp Us",
+    },
+  },
+  aboutPage: {
+    pageTitle: "About Paraguay Access | Who We Are & Why Clients Trust Us",
+    breadcrumb: { home: "Homepage", about: "About Us" },
+    hero: {
+      title: "Built on Real Experience in Paraguay",
+      subtitle:
+        "We started Paraguay Access because we went through the residency process ourselves. That firsthand knowledge is the foundation of every service we offer today.",
+    },
+    story: {
+      sectionTag: "Our Story",
+      title: "From Personal Experience to Professional Service",
+      p1: "Paraguay Access was born out of a simple realization: obtaining residency in Paraguay shouldn't require guesswork. After navigating the process on our own and experiencing the challenges that come with it, we decided to build something better for those who come after us.",
+      p2: "What began as helping a few acquaintances with their paperwork has grown into a specialized firm serving clients from more than 40 countries. We combine deep local knowledge with the perspective of someone who has been on the other side of the process.",
+      p3: "Today, we work with a trusted network of accountants, sworn translators, notaries, and legal professionals in Paraguay. This allows us to cover every step of the residency, tax, and company formation process under a single point of contact.",
+    },
+    stats: {
+      clients: { value: "750+", label: "Clients Served" },
+      countries: { value: "40+", label: "Countries of Origin" },
+      years: { value: "5+", label: "Years of Operations" },
+      satisfaction: { value: "98%", label: "Client Satisfaction" },
+    },
+    values: {
+      sectionTag: "What Drives Us",
+      title: "Principles That Guide Our Work",
+      items: [
+        {
+          title: "Clarity Over Jargon",
+          description: "We explain every step in plain language. You'll always know what's happening with your case and what comes next.",
+        },
+        {
+          title: "Results Before Payment",
+          description: "We don't charge upfront. Our fee structure is tied to actual progress, so you only pay when we deliver.",
+        },
+        {
+          title: "One Contact, Full Coverage",
+          description: "Instead of coordinating with multiple agencies, you get a single point of contact who manages everything on your behalf.",
+        },
+        {
+          title: "Continuous Updates",
+          description: "From your first message to your final document, we keep you informed at every milestone. No radio silence, no surprises.",
+        },
+      ],
+    },
+    trust: {
+      sectionTag: "Why Our Clients Trust Us",
+      title: "Real Track Record, Real Results",
+      items: [
+        "750+ successful residency cases across 40+ nationalities",
+        "Transparent pricing with no hidden fees or upfront costs",
+        "Dedicated support in English, Spanish, Portuguese, and more",
+        "Established network of licensed local professionals",
+        "Proven expertise in Paraguayan immigration and tax law",
+        "Clients include digital nomads, investors, retirees, and entrepreneurs",
+      ],
+    },
+    cta: {
+      title: "Ready to Work With Us?",
+      subtitle:
+        "Tell us about your goals and we'll show you exactly how we can help. Your first consultation is free, with no commitment required.",
+      button: "Get in Touch",
+      buttonSecondary: "Explore Our Services",
+    },
+  },
+  privacyPage: {
+    pageTitle: "Privacy Policy | Paraguay Access",
+    breadcrumb: { home: "Home", privacy: "Privacy Policy" },
+    hero: {
+      title: "Privacy Policy",
+      subtitle: "Your privacy matters to us. This policy explains how we collect, use, and protect your personal data.",
+    },
+    lastUpdated: "Last updated: March 2026",
+    sections: [
+      {
+        title: "Information We Collect",
+        content: "We collect personal information that you voluntarily provide when contacting us, requesting our services, or submitting inquiries through our website. This includes your name, email address, phone number, nationality, and any details related to your residency or tax advisory request. We also collect basic usage data through standard web analytics to improve your browsing experience.",
+      },
+      {
+        title: "How We Use Your Information",
+        content: "Your personal data is used exclusively to respond to your inquiries, deliver the services you have requested, and communicate relevant updates about your case. We may also use your contact details to send follow-up information related to your initial request. We do not sell, rent, or share your personal information with third parties for marketing purposes.",
+      },
+      {
+        title: "Data Sharing and Third Parties",
+        content: "We may share your information with trusted professionals who assist in delivering our services, including licensed accountants, sworn translators, notaries, and legal advisors in Paraguay. These partners are bound by confidentiality agreements and only receive data necessary for their specific role in your case. We do not transfer your data to any party outside of what is strictly required to fulfill our services.",
+      },
+      {
+        title: "Data Security",
+        content: "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. All communications through our website are encrypted. Access to client data is restricted to authorized personnel only.",
+      },
+      {
+        title: "Cookies and Analytics",
+        content: "Our website may use cookies and similar tracking technologies to improve functionality and analyze site traffic. You can manage cookie preferences through your browser settings. We use analytics tools that collect anonymized usage data to help us understand how visitors interact with our website.",
+      },
+      {
+        title: "Your Rights",
+        content: "You have the right to access, correct, or request deletion of your personal data at any time. You may also withdraw consent for data processing or request a copy of the information we hold about you. To exercise these rights, contact us at advisory@paraguayaccess.com.",
+      },
+      {
+        title: "Data Retention",
+        content: "We retain your personal data only for as long as necessary to fulfill the purposes described in this policy or as required by applicable law. Once your data is no longer needed, it is securely deleted or anonymized.",
+      },
+      {
+        title: "Changes to This Policy",
+        content: "We may update this privacy policy from time to time to reflect changes in our practices or legal requirements. Any updates will be published on this page with a revised date. We encourage you to review this policy periodically.",
+      },
+      {
+        title: "Contact Us",
+        content: "If you have any questions about this privacy policy or how we handle your data, please reach out to us at advisory@paraguayaccess.com or via WhatsApp at +595 992 110 955.",
+      },
+    ],
+  },
+  termsPage: {
+    pageTitle: "Terms of Service | Paraguay Access",
+    breadcrumb: { home: "Home", terms: "Terms of Service" },
+    hero: {
+      title: "Terms of Service",
+      subtitle: "These terms govern your use of our website and the services we provide. Please read them carefully before engaging our services.",
+    },
+    lastUpdated: "Last updated: March 2026",
+    sections: [
+      {
+        title: "Acceptance of Terms",
+        content: "By accessing or using the Paraguay Access website and services, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you should not use our website or engage our services.",
+      },
+      {
+        title: "Services Description",
+        content: "Paraguay Access provides advisory and facilitation services related to personal and tax residency in Paraguay, accounting and fiscal compliance, and company formation. Our role is to guide, advise, and coordinate with local professionals on your behalf. We are not a law firm and do not provide legal representation. Final decisions regarding immigration, tax, and corporate matters rest with the relevant Paraguayan authorities.",
+      },
+      {
+        title: "Client Responsibilities",
+        content: "You agree to provide accurate, complete, and truthful information when requesting our services. You are responsible for ensuring that any documents you submit are genuine and valid. Failure to provide accurate information may result in delays, denial of applications, or termination of services without refund for work already performed.",
+      },
+      {
+        title: "Fees and Payment",
+        content: "Our fee structure is tied to actual progress and deliverables. Specific fees will be communicated and agreed upon before any work begins. We do not charge upfront fees without a clear scope of work. Payment terms, methods, and schedules will be detailed in the individual service agreement provided to each client.",
+      },
+      {
+        title: "No Guarantees on Outcomes",
+        content: "While we leverage our expertise and local network to maximize the likelihood of a successful outcome, we cannot guarantee the approval of residency applications, tax registrations, or company formations. These decisions are made by Paraguayan government agencies and are subject to their own criteria and procedures.",
+      },
+      {
+        title: "Confidentiality",
+        content: "We treat all client information as strictly confidential. Personal data and case details are shared only with authorized professionals involved in delivering your services, as outlined in our Privacy Policy. We do not disclose client information to unrelated third parties.",
+      },
+      {
+        title: "Limitation of Liability",
+        content: "Paraguay Access shall not be held liable for any indirect, incidental, or consequential damages arising from the use of our website or services. Our total liability is limited to the fees paid by you for the specific service in question. We are not responsible for delays caused by government processing times, third-party service providers, or circumstances beyond our reasonable control.",
+      },
+      {
+        title: "Intellectual Property",
+        content: "All content on this website, including text, graphics, logos, and design elements, is the property of Paraguay Access and is protected by applicable intellectual property laws. You may not reproduce, distribute, or use any content from this website without our prior written consent.",
+      },
+      {
+        title: "Termination",
+        content: "Either party may terminate the service relationship at any time with written notice. If you terminate services after work has begun, fees for completed milestones are non-refundable. We reserve the right to discontinue services if terms are violated or if the client provides false information.",
+      },
+      {
+        title: "Governing Law",
+        content: "These terms are governed by and construed in accordance with the laws of the Republic of Paraguay. Any disputes arising from these terms or related services shall be subject to the jurisdiction of the courts in Asuncion, Paraguay.",
+      },
+      {
+        title: "Contact Us",
+        content: "For questions about these terms, please contact us at advisory@paraguayaccess.com or via WhatsApp at +595 992 110 955.",
+      },
+    ],
   },
 };
 

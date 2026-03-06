@@ -1,0 +1,83 @@
+"use client";
+
+import { useEffect } from "react";
+import { LanguageProvider, useLanguage } from "@/lib/i18n/LanguageContext";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
+
+function TermsContent() {
+  const { t } = useLanguage();
+  const tm = t.termsPage;
+
+  useEffect(() => {
+    document.title = tm.pageTitle;
+  }, [tm.pageTitle]);
+
+  return (
+    <>
+      <Header />
+      <main>
+        {/* Hero Section */}
+        <section className="relative overflow-hidden bg-linear-to-br from-blue-800 via-blue-700 to-blue-900">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/3" />
+            <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-400 rounded-full translate-y-1/2 -translate-x-1/3" />
+          </div>
+
+          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-24">
+            {/* Breadcrumb */}
+            <nav className="flex items-center gap-2 text-sm text-blue-200 mb-8">
+              <a href="/" className="hover:text-white transition-colors">
+                {tm.breadcrumb.home}
+              </a>
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+              <span className="text-white font-medium">{tm.breadcrumb.terms}</span>
+            </nav>
+
+            <div className="max-w-2xl">
+              <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
+                {tm.hero.title}
+              </h1>
+              <p className="text-lg text-blue-100 leading-relaxed">
+                {tm.hero.subtitle}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Content Section */}
+        <section className="py-20 lg:py-28 bg-white">
+          <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+            <p className="text-sm text-slate-500 mb-12">{tm.lastUpdated}</p>
+
+            <div className="space-y-10">
+              {tm.sections.map((section, i) => (
+                <div key={i}>
+                  <h2 className="text-xl font-bold text-slate-900 mb-3">
+                    {i + 1}. {section.title}
+                  </h2>
+                  <p className="text-slate-600 leading-relaxed">
+                    {section.content}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+      <WhatsAppButton />
+    </>
+  );
+}
+
+export default function TermsPage() {
+  return (
+    <LanguageProvider>
+      <TermsContent />
+    </LanguageProvider>
+  );
+}

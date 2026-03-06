@@ -119,7 +119,7 @@ function ResidencyContent() {
 
               {/* CTA */}
               <a
-                href="mailto:advisory@paraguayaccess.com"
+                href="/contact"
                 className="mt-10 inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg shadow-blue-900/20 text-base"
               >
                 {r.hero.cta}
@@ -401,11 +401,14 @@ function ResidencyContent() {
                   {r.support.title}
                 </h2>
 
-                {/* ID card image placeholder */}
-                <div className="relative rounded-2xl overflow-hidden bg-blue-600/50 aspect-3/2 max-w-xs flex items-center justify-center">
-                  <svg className="w-16 h-16 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
-                  </svg>
+                <div className="relative rounded-2xl overflow-hidden max-w-md">
+                  <Image
+                    src="/images/equipo-trabajo.png"
+                    alt="Paraguay Access team assisting clients"
+                    width={500}
+                    height={333}
+                    className="rounded-2xl object-cover"
+                  />
                 </div>
               </div>
 
@@ -436,7 +439,7 @@ function ResidencyContent() {
                 </div>
 
                 <a
-                  href="mailto:advisory@paraguayaccess.com"
+                  href="/contact"
                   className="inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg text-base"
                 >
                   {r.support.cta}

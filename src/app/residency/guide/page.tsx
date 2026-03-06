@@ -152,7 +152,7 @@ function GuideContent() {
             {/* CTA */}
             <div className="text-center py-8 border-t border-slate-200">
               <a
-                href="mailto:advisory@paraguayaccess.com"
+                href="/contact"
                 className="inline-flex items-center gap-2 bg-blue-700 text-white font-bold px-10 py-4 rounded-xl hover:bg-blue-800 transition-all shadow-lg text-base"
               >
                 {g.cta}

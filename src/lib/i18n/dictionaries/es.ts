@@ -387,29 +387,29 @@ const es: Dictionary = {
       title: "Preguntas Frecuentes",
       items: [
         {
-          question: "¿Necesito depositar $5,000 para obtener la residencia?",
+          question: "¿Todavía se necesita un depósito bancario de $5.000 para la residencia?",
           answer:
-            "No. El proceso para obtener la residencia en Paraguay cambió a finales de 2022. Hoy ya no es necesario depositar ningún monto en un banco.",
+            "Ya no. Paraguay actualizó sus requisitos de residencia a finales de 2022, eliminando por completo el depósito bancario obligatorio. Hoy puedes iniciar el trámite sin necesidad de depositar fondos en una cuenta bancaria local.",
         },
         {
-          question: "¿Puedo hacer todo en un solo viaje?",
+          question: "¿Se puede completar todo en un solo viaje?",
           answer:
-            "Sí, en la mayoría de los casos puedes completar todo el proceso de residencia temporal en un solo viaje corto de 5 a 7 días hábiles.",
+            "Sí. Gracias a los cambios normativos vigentes desde septiembre de 2024, es posible nuevamente presentar tanto la solicitud de residencia como la de cédula de identidad en una sola visita corta a Paraguay.",
         },
         {
-          question: "¿Son abogados?",
+          question: "¿Necesito contratar un abogado para el proceso?",
           answer:
-            "Somos una firma especializada que trabaja con una red de profesionales habilitados , abogados, contadores y traductores jurados , para asegurar que cada aspecto de tu caso sea manejado correctamente.",
+            "No se requiere un abogado en ninguna etapa del trámite. Nuestro equipo de especialistas en migración gestiona todo el procedimiento de principio a fin. No obstante, nuestra red profesional incluye abogados habilitados, y con gusto podemos involucrar a uno si así lo prefieres.",
         },
         {
-          question: "¿Cuánto tiempo toma completar el proceso?",
+          question: "¿Cuál es el plazo actual para recibir mis documentos?",
           answer:
-            "La residencia temporal suele tomar de 4 a 8 semanas después de tu visita. La residencia permanente con inversión toma aproximadamente 10 días hábiles en el país.",
+            "Con los tiempos de procesamiento actuales del gobierno, puedes esperar recibir tanto tu tarjeta de residencia como tu cédula de identidad en un plazo aproximado de 75 a 80 días desde la presentación de la solicitud.",
         },
         {
-          question: "¿Necesito demostrar ahorros o ingresos?",
+          question: "¿Paraguay exige demostrar ahorros o ingresos para otorgar la residencia?",
           answer:
-            "No. Paraguay no requiere prueba de ingresos o ahorros para la residencia temporal. Para la residencia permanente con inversión, se requiere una inversión mínima de 10,000 USD.",
+            "No. Paraguay no impone ningún requisito de solvencia económica para conceder la residencia. Esto aplica tanto a la residencia temporal como a la permanente. No se necesita demostrar ingresos, ahorros ni un mínimo financiero.",
         },
       ],
     },
@@ -627,6 +627,236 @@ const es: Dictionary = {
         "Contáctanos hoy para una consulta gratuita. Te guiaremos a través de todo el proceso y te ayudaremos a elegir la mejor estructura para tus objetivos.",
       button: "Agendar una Consulta",
     },
+  },
+  contactPage: {
+    pageTitle: "Contacto Paraguay Access | Comunícate con Nuestro Equipo",
+    breadcrumb: { home: "Inicio", contact: "Contacto" },
+    hero: {
+      title: "Hablemos Sobre tu Futuro en Paraguay",
+      subtitle:
+        "Ya sea que estés considerando la residencia, necesites asesoría fiscal o quieras abrir una empresa — estamos aquí para ayudarte. A continuación encontrarás cómo contactarnos y qué esperar.",
+    },
+    process: {
+      sectionTag: "Cómo Funciona",
+      title: "Pasos Simples para Comenzar",
+      subtitle: "Solicitar información o iniciar un servicio con nosotros es muy sencillo. Así funciona:",
+      steps: [
+        {
+          title: "1. Escríbenos",
+          description: "Envíanos un correo o un mensaje de WhatsApp describiendo brevemente tu situación: tu nacionalidad, tus objetivos (residencia, planificación fiscal, apertura de empresa) y cualquier pregunta que tengas.",
+        },
+        {
+          title: "2. Consulta Inicial Gratuita",
+          description: "Nuestro equipo revisará tu mensaje y coordinará una consulta sin costo por llamada de WhatsApp o teléfono para entender tus necesidades en detalle.",
+        },
+        {
+          title: "3. Propuesta Personalizada",
+          description: "Basándonos en nuestra conversación, te enviaremos una propuesta clara con servicios, plazos y costos — sin cargos ocultos ni sorpresas.",
+        },
+        {
+          title: "4. Nos Encargamos de Todo",
+          description: "Una vez que confirmes, nos ocupamos del proceso completo: documentos, traducciones, trámites gubernamentales y soporte continuo hasta la finalización.",
+        },
+      ],
+    },
+    methods: {
+      title: "Contáctanos Directamente",
+      subtitle: "Elige el canal que prefieras. Normalmente respondemos en pocas horas durante días hábiles.",
+      email: {
+        title: "Correo Electrónico",
+        description: "Ideal para consultas detalladas. Describe tu situación y objetivos, y te responderemos con orientación personalizada en menos de 24 horas.",
+        value: "advisory@paraguayaccess.com",
+        cta: "Enviar Correo",
+      },
+      whatsapp: {
+        title: "WhatsApp / Teléfono",
+        description: "¿Prefieres una conversación rápida? Escríbenos por WhatsApp o llámanos directamente. Disponibles para mensajes de texto, audio y llamadas.",
+        value: "+595 992 110 955",
+        cta: "Abrir WhatsApp",
+      },
+    },
+    info: {
+      title: "Qué Incluir en tu Mensaje",
+      items: [
+        "Tu nombre completo y nacionalidad",
+        "El servicio que te interesa (residencia, asesoría fiscal, apertura de empresa, etc.)",
+        "Tu situación actual y objetivos",
+        "Cualquier pregunta específica o plazos que tengas en mente",
+      ],
+      note: "Cuantos más detalles nos brindes, más precisa y útil será nuestra respuesta.",
+    },
+    formCta: {
+      title: "¿Listo para Dar el Primer Paso?",
+      subtitle:
+        "Nuestro equipo está disponible para responder tus preguntas y guiarte en el proceso. Las consultas iniciales siempre son gratuitas — sin compromiso.",
+      buttonEmail: "Escríbenos Ahora",
+      buttonWhatsApp: "WhatsApp",
+    },
+  },
+  aboutPage: {
+    pageTitle: "Sobre Paraguay Access | Quiénes Somos y Por Qué Confían en Nosotros",
+    breadcrumb: { home: "Inicio", about: "Sobre Nosotros" },
+    hero: {
+      title: "Construido Sobre Experiencia Real en Paraguay",
+      subtitle:
+        "Creamos Paraguay Access porque nosotros mismos pasamos por el proceso de residencia. Ese conocimiento de primera mano es la base de cada servicio que ofrecemos hoy.",
+    },
+    story: {
+      sectionTag: "Nuestra Historia",
+      title: "De la Experiencia Personal al Servicio Profesional",
+      p1: "Paraguay Access nació de una constatación simple: obtener la residencia en Paraguay no debería requerir improvisación. Después de recorrer el proceso por nuestra cuenta y experimentar los desafíos que conlleva, decidimos construir algo mejor para quienes vienen después.",
+      p2: "Lo que empezó ayudando a un par de conocidos con sus trámites se transformó en una firma especializada que atiende clientes de más de 40 países. Combinamos un profundo conocimiento local con la perspectiva de quien ha estado del otro lado del proceso.",
+      p3: "Hoy trabajamos con una red de confianza de contadores, traductores jurados, escribanos y profesionales legales en Paraguay. Esto nos permite cubrir cada etapa del proceso de residencia, impuestos y constitución de empresas desde un único punto de contacto.",
+    },
+    stats: {
+      clients: { value: "750+", label: "Clientes Atendidos" },
+      countries: { value: "40+", label: "Países de Origen" },
+      years: { value: "5+", label: "Años de Operación" },
+      satisfaction: { value: "98%", label: "Satisfacción del Cliente" },
+    },
+    values: {
+      sectionTag: "Lo Que Nos Impulsa",
+      title: "Principios Que Guían Nuestro Trabajo",
+      items: [
+        {
+          title: "Claridad Antes que Jerga",
+          description: "Explicamos cada paso en un lenguaje claro. Siempre sabrás qué está pasando con tu caso y qué viene después.",
+        },
+        {
+          title: "Resultados Antes que Cobro",
+          description: "No cobramos por adelantado. Nuestra estructura de honorarios está ligada al avance real, así que solo pagas cuando entregamos.",
+        },
+        {
+          title: "Un Contacto, Cobertura Total",
+          description: "En lugar de coordinar con múltiples agencias, tienes un solo punto de contacto que gestiona todo por ti.",
+        },
+        {
+          title: "Actualizaciones Constantes",
+          description: "Desde tu primer mensaje hasta tu último documento, te mantenemos informado en cada hito. Sin silencios, sin sorpresas.",
+        },
+      ],
+    },
+    trust: {
+      sectionTag: "Por Qué Confían en Nosotros",
+      title: "Trayectoria Real, Resultados Reales",
+      items: [
+        "750+ casos de residencia exitosos en más de 40 nacionalidades",
+        "Precios transparentes sin costos ocultos ni pagos anticipados",
+        "Soporte dedicado en español, inglés, portugués y más",
+        "Red establecida de profesionales locales habilitados",
+        "Experiencia comprobada en legislación migratoria y fiscal paraguaya",
+        "Clientes que incluyen nómadas digitales, inversores, jubilados y emprendedores",
+      ],
+    },
+    cta: {
+      title: "¿Listo para Trabajar con Nosotros?",
+      subtitle:
+        "Cuéntanos sobre tus objetivos y te mostraremos exactamente cómo podemos ayudarte. Tu primera consulta es gratuita, sin compromiso.",
+      button: "Contáctanos",
+      buttonSecondary: "Explora Nuestros Servicios",
+    },
+  },
+  privacyPage: {
+    pageTitle: "Política de Privacidad | Paraguay Access",
+    breadcrumb: { home: "Inicio", privacy: "Política de Privacidad" },
+    hero: {
+      title: "Política de Privacidad",
+      subtitle: "Tu privacidad es importante para nosotros. Esta política explica cómo recopilamos, utilizamos y protegemos tus datos personales.",
+    },
+    lastUpdated: "Última actualización: Marzo 2026",
+    sections: [
+      {
+        title: "Información que Recopilamos",
+        content: "Recopilamos información personal que nos proporcionas voluntariamente al contactarnos, solicitar nuestros servicios o enviar consultas a través de nuestro sitio web. Esto incluye tu nombre, correo electrónico, número de teléfono, nacionalidad y cualquier detalle relacionado con tu solicitud de residencia o asesoría fiscal. También recopilamos datos básicos de uso mediante análisis web estándar para mejorar tu experiencia de navegación.",
+      },
+      {
+        title: "Cómo Utilizamos Tu Información",
+        content: "Tus datos personales se utilizan exclusivamente para responder a tus consultas, prestar los servicios que has solicitado y comunicar actualizaciones relevantes sobre tu caso. También podemos usar tus datos de contacto para enviarte información de seguimiento relacionada con tu solicitud inicial. No vendemos, alquilamos ni compartimos tu información personal con terceros con fines de marketing.",
+      },
+      {
+        title: "Compartición de Datos y Terceros",
+        content: "Podemos compartir tu información con profesionales de confianza que colaboran en la prestación de nuestros servicios, incluyendo contadores habilitados, traductores jurados, notarios y asesores legales en Paraguay. Estos socios están sujetos a acuerdos de confidencialidad y solo reciben los datos necesarios para su función específica en tu caso. No transferimos tus datos a ninguna parte fuera de lo estrictamente necesario para cumplir con nuestros servicios.",
+      },
+      {
+        title: "Seguridad de los Datos",
+        content: "Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos personales contra el acceso no autorizado, la alteración, la divulgación o la destrucción. Todas las comunicaciones a través de nuestro sitio web están cifradas. El acceso a los datos de los clientes está restringido únicamente al personal autorizado.",
+      },
+      {
+        title: "Cookies y Análisis",
+        content: "Nuestro sitio web puede utilizar cookies y tecnologías de seguimiento similares para mejorar la funcionalidad y analizar el tráfico del sitio. Puedes gestionar las preferencias de cookies a través de la configuración de tu navegador. Utilizamos herramientas de análisis que recopilan datos de uso anonimizados para comprender cómo los visitantes interactúan con nuestro sitio web.",
+      },
+      {
+        title: "Tus Derechos",
+        content: "Tienes derecho a acceder, corregir o solicitar la eliminación de tus datos personales en cualquier momento. También puedes retirar el consentimiento para el procesamiento de datos o solicitar una copia de la información que tenemos sobre ti. Para ejercer estos derechos, contáctanos en advisory@paraguayaccess.com.",
+      },
+      {
+        title: "Retención de Datos",
+        content: "Conservamos tus datos personales solo durante el tiempo necesario para cumplir con los fines descritos en esta política o según lo requiera la legislación aplicable. Una vez que tus datos ya no sean necesarios, se eliminan de forma segura o se anonimizan.",
+      },
+      {
+        title: "Cambios en Esta Política",
+        content: "Podemos actualizar esta política de privacidad periódicamente para reflejar cambios en nuestras prácticas o requisitos legales. Cualquier actualización se publicará en esta página con una fecha revisada. Te recomendamos revisar esta política periódicamente.",
+      },
+      {
+        title: "Contáctanos",
+        content: "Si tienes alguna pregunta sobre esta política de privacidad o sobre cómo manejamos tus datos, comunícate con nosotros en advisory@paraguayaccess.com o por WhatsApp al +595 992 110 955.",
+      },
+    ],
+  },
+  termsPage: {
+    pageTitle: "Términos de Servicio | Paraguay Access",
+    breadcrumb: { home: "Inicio", terms: "Términos de Servicio" },
+    hero: {
+      title: "Términos de Servicio",
+      subtitle: "Estos términos regulan el uso de nuestro sitio web y los servicios que prestamos. Por favor, léelos detenidamente antes de contratar nuestros servicios.",
+    },
+    lastUpdated: "Última actualización: Marzo 2026",
+    sections: [
+      {
+        title: "Aceptación de los Términos",
+        content: "Al acceder o utilizar el sitio web y los servicios de Paraguay Access, aceptas quedar vinculado por estos Términos de Servicio. Si no estás de acuerdo con alguna parte de estos términos, no debes usar nuestro sitio web ni contratar nuestros servicios.",
+      },
+      {
+        title: "Descripción de los Servicios",
+        content: "Paraguay Access presta servicios de asesoría y facilitación relacionados con la residencia personal y fiscal en Paraguay, contabilidad y cumplimiento fiscal, y constitución de empresas. Nuestro rol es guiar, asesorar y coordinar con profesionales locales en tu nombre. No somos un bufete de abogados y no proporcionamos representación legal. Las decisiones finales sobre temas migratorios, fiscales y societarios corresponden a las autoridades paraguayas competentes.",
+      },
+      {
+        title: "Responsabilidades del Cliente",
+        content: "Te comprometes a proporcionar información precisa, completa y veraz al solicitar nuestros servicios. Eres responsable de asegurar que los documentos que envíes sean auténticos y válidos. La falta de información precisa puede resultar en retrasos, denegación de solicitudes o terminación de los servicios sin reembolso por el trabajo ya realizado.",
+      },
+      {
+        title: "Honorarios y Pagos",
+        content: "Nuestra estructura de honorarios está vinculada al progreso real y los entregables. Los honorarios específicos se comunicarán y acordarán antes de que comience cualquier trabajo. No cobramos honorarios por adelantado sin un alcance de trabajo definido. Los términos de pago, métodos y plazos se detallarán en el acuerdo de servicio individual proporcionado a cada cliente.",
+      },
+      {
+        title: "Sin Garantía de Resultados",
+        content: "Aunque aprovechamos nuestra experiencia y red local para maximizar las probabilidades de un resultado exitoso, no podemos garantizar la aprobación de solicitudes de residencia, registros fiscales o constituciones de empresas. Estas decisiones las toman las agencias gubernamentales paraguayas y están sujetas a sus propios criterios y procedimientos.",
+      },
+      {
+        title: "Confidencialidad",
+        content: "Tratamos toda la información del cliente como estrictamente confidencial. Los datos personales y los detalles del caso se comparten únicamente con profesionales autorizados involucrados en la prestación de tus servicios, según lo establecido en nuestra Política de Privacidad. No divulgamos información del cliente a terceros no relacionados.",
+      },
+      {
+        title: "Limitación de Responsabilidad",
+        content: "Paraguay Access no será responsable por daños indirectos, incidentales o consecuentes derivados del uso de nuestro sitio web o servicios. Nuestra responsabilidad total se limita a los honorarios pagados por ti por el servicio específico en cuestión. No somos responsables de retrasos causados por tiempos de procesamiento gubernamental, proveedores de servicios externos o circunstancias fuera de nuestro control razonable.",
+      },
+      {
+        title: "Propiedad Intelectual",
+        content: "Todo el contenido de este sitio web, incluyendo textos, gráficos, logotipos y elementos de diseño, es propiedad de Paraguay Access y está protegido por las leyes de propiedad intelectual aplicables. No puedes reproducir, distribuir ni utilizar ningún contenido de este sitio web sin nuestro consentimiento previo por escrito.",
+      },
+      {
+        title: "Terminación",
+        content: "Cualquiera de las partes puede terminar la relación de servicio en cualquier momento mediante aviso por escrito. Si terminas los servicios después de que el trabajo haya comenzado, los honorarios por hitos completados no son reembolsables. Nos reservamos el derecho de discontinuar los servicios si se violan los términos o si el cliente proporciona información falsa.",
+      },
+      {
+        title: "Ley Aplicable",
+        content: "Estos términos se rigen e interpretan de acuerdo con las leyes de la República del Paraguay. Cualquier disputa derivada de estos términos o servicios relacionados estará sujeta a la jurisdicción de los tribunales de Asunción, Paraguay.",
+      },
+      {
+        title: "Contáctanos",
+        content: "Para preguntas sobre estos términos, comunícate con nosotros en advisory@paraguayaccess.com o por WhatsApp al +595 992 110 955.",
+      },
+    ],
   },
 };
 

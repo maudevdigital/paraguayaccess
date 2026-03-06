@@ -45,6 +45,7 @@ const LanguageContext = createContext<LanguageContextType>({
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("en");
+  const [isReady, setIsReady] = useState(false);
 
   // Restore saved locale on mount
   useEffect(() => {
@@ -57,6 +58,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     } catch {
       // localStorage unavailable (SSR / private mode)
     }
+    setIsReady(true);
   }, []);
 
   const setLocale = useCallback((newLocale: Locale) => {
@@ -73,7 +75,15 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <LanguageContext.Provider value={{ locale, setLocale, t }}>
-      {children}
+      <div
+        style={{
+          visibility: isReady ? "visible" : "hidden",
+          opacity: isReady ? 1 : 0,
+          transition: "opacity 0.05s ease-in",
+        }}
+      >
+        {children}
+      </div>
     </LanguageContext.Provider>
   );
 }
