@@ -2,12 +2,15 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { usePathname } from "next/navigation";
-import { useLanguage, locales, type Locale } from "@/lib/i18n/LanguageContext";
+import { useLanguage, locales, languageNames, type Locale } from "@/lib/i18n/LanguageContext";
 import FlagIcon from "@/components/FlagIcon";
 
 export default function Header() {
   const { t, locale, setLocale } = useLanguage();
   const pathname = usePathname();
+
+  // Helper: locale-prefixed path
+  const lp = (path: string) => (path === "/" ? `/${locale}` : `/${locale}${path}`);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
@@ -64,14 +67,17 @@ export default function Header() {
   const currentLocale = locales.find((l) => l.code === locale)!;
 
   const isServicePage = ["/residency", "/accounting", "/company-formation"].some(
-    (p) => pathname === p || pathname.startsWith(p + "/")
+    (p) => pathname === lp(p) || pathname.startsWith(lp(p) + "/")
   );
 
-  const isActive = (href: string) =>
-    href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
+  const isActive = (href: string) => {
+    const full = lp(href);
+    if (href === "/") return pathname === `/${locale}` || pathname === `/${locale}/`;
+    return pathname === full || pathname.startsWith(full + "/");
+  };
 
   const navLinks = [
-    { href: "/about", label: t.nav.aboutUs },
+    { href: lp("/about"), label: t.nav.aboutUs },
   ];
 
   return (
@@ -86,7 +92,7 @@ export default function Header() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-visible">
           <div className="flex h-20 sm:h-24 lg:h-28 items-center justify-between overflow-visible">
             {/* Logo */}
-            <a href="/" className="flex items-center shrink-0 -ml-4 overflow-visible">
+            <a href={lp("/")} className="flex items-center shrink-0 -ml-4 overflow-visible">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/logo-blue.png"
@@ -132,7 +138,7 @@ export default function Header() {
                 {isServicesOpen && (
                   <div className="absolute top-full left-0 mt-1 w-80 rounded-2xl bg-white shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden p-2">
                     <a
-                      href="/residency"
+                      href={lp("/residency")}
                       onClick={() => setIsServicesOpen(false)}
                       className="flex items-start gap-3 px-4 py-3 rounded-xl hover:bg-blue-50 transition-colors group"
                     >
@@ -147,7 +153,7 @@ export default function Header() {
                       </div>
                     </a>
                     <a
-                      href="/accounting"
+                      href={lp("/accounting")}
                       onClick={() => setIsServicesOpen(false)}
                       className="flex items-start gap-3 px-4 py-3 rounded-xl hover:bg-blue-50 transition-colors group"
                     >
@@ -162,7 +168,7 @@ export default function Header() {
                       </div>
                     </a>
                     <a
-                      href="/company-formation"
+                      href={lp("/company-formation")}
                       onClick={() => setIsServicesOpen(false)}
                       className="flex items-start gap-3 px-4 py-3 rounded-xl hover:bg-blue-50 transition-colors group"
                     >
@@ -182,7 +188,7 @@ export default function Header() {
 
               {/* Contact Us */}
               <a
-                href="/contact"
+                href={lp("/contact")}
                 className={`px-4 py-2 text-sm font-semibold transition-colors rounded-lg ${
                   isActive("/contact")
                     ? "text-blue-700 bg-blue-50"
@@ -228,7 +234,7 @@ export default function Header() {
                 </button>
 
                 {isLangOpen && (
-                  <div className="absolute top-full right-0 mt-2 w-44 rounded-xl bg-white shadow-2xl border border-slate-200 overflow-hidden">
+                  <div className="absolute top-full right-0 mt-2 w-64 rounded-xl bg-white shadow-2xl border border-slate-200 overflow-hidden">
                     <div className="py-1.5">
                       {locales.map((loc) => (
                         <button
@@ -243,10 +249,15 @@ export default function Header() {
                               : "text-slate-700 hover:bg-slate-50"
                           }`}
                         >
-                          <FlagIcon code={loc.code} className="w-5 h-3.5" />
-                          <span>{loc.name}</span>
+                          <FlagIcon code={loc.code} className="w-5 h-3.5 shrink-0" />
+                          <span>
+                            {loc.name}
+                            {loc.code !== locale && (
+                              <span className="text-slate-400 font-normal"> ({languageNames[locale][loc.code]})</span>
+                            )}
+                          </span>
                           {locale === loc.code && (
-                            <svg className="w-3.5 h-3.5 ml-auto text-blue-700" fill="currentColor" viewBox="0 0 20 20">
+                            <svg className="w-3.5 h-3.5 ml-auto text-blue-700 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                               <path
                                 fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -263,7 +274,7 @@ export default function Header() {
 
               {/* CTA Button */}
               <a
-                href="/contact"
+                href={lp("/contact")}
                 className="ml-4 inline-flex items-center rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-blue-800 transition-all hover:shadow-lg"
               >
                 {t.nav.getStarted}
@@ -308,19 +319,19 @@ export default function Header() {
           {/* Services */}
           <p className="px-4 pt-1 pb-2 text-xs font-semibold text-slate-400 uppercase tracking-wider">{t.nav.services}</p>
           <div className="space-y-0.5 mb-3">
-            <button onClick={() => handleMobileNav("/residency")} className={`flex items-center gap-3 px-4 py-2.5 rounded-lg w-full text-left transition-colors ${isActive("/residency") ? "text-blue-700 bg-blue-50 font-semibold" : "text-slate-700 hover:text-blue-700 hover:bg-blue-50"}`}>
+            <button onClick={() => handleMobileNav(lp("/residency"))} className={`flex items-center gap-3 px-4 py-2.5 rounded-lg w-full text-left transition-colors ${isActive("/residency") ? "text-blue-700 bg-blue-50 font-semibold" : "text-slate-700 hover:text-blue-700 hover:bg-blue-50"}`}>
               <svg className="w-5 h-5 shrink-0 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
               </svg>
               <span className="text-sm font-medium">{t.nav.residency}</span>
             </button>
-            <button onClick={() => handleMobileNav("/accounting")} className={`flex items-center gap-3 px-4 py-2.5 rounded-lg w-full text-left transition-colors ${isActive("/accounting") ? "text-blue-700 bg-blue-50 font-semibold" : "text-slate-700 hover:text-blue-700 hover:bg-blue-50"}`}>
+            <button onClick={() => handleMobileNav(lp("/accounting"))} className={`flex items-center gap-3 px-4 py-2.5 rounded-lg w-full text-left transition-colors ${isActive("/accounting") ? "text-blue-700 bg-blue-50 font-semibold" : "text-slate-700 hover:text-blue-700 hover:bg-blue-50"}`}>
               <svg className="w-5 h-5 shrink-0 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
               </svg>
               <span className="text-sm font-medium">{t.nav.accountingTax}</span>
             </button>
-            <button onClick={() => handleMobileNav("/company-formation")} className={`flex items-center gap-3 px-4 py-2.5 rounded-lg w-full text-left transition-colors ${isActive("/company-formation") ? "text-blue-700 bg-blue-50 font-semibold" : "text-slate-700 hover:text-blue-700 hover:bg-blue-50"}`}>
+            <button onClick={() => handleMobileNav(lp("/company-formation"))} className={`flex items-center gap-3 px-4 py-2.5 rounded-lg w-full text-left transition-colors ${isActive("/company-formation") ? "text-blue-700 bg-blue-50 font-semibold" : "text-slate-700 hover:text-blue-700 hover:bg-blue-50"}`}>
               <svg className="w-5 h-5 shrink-0 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
               </svg>
@@ -330,7 +341,7 @@ export default function Header() {
 
           {/* Other links */}
           <div className="border-t border-slate-100 pt-3 space-y-0.5">
-            <button onClick={() => handleMobileNav("/contact")} className={`block w-full text-left px-4 py-2.5 text-sm font-semibold rounded-lg transition-colors ${isActive("/contact") ? "text-blue-700 bg-blue-50" : "text-slate-700 hover:text-blue-700 hover:bg-blue-50"}`}>
+            <button onClick={() => handleMobileNav(lp("/contact"))} className={`block w-full text-left px-4 py-2.5 text-sm font-semibold rounded-lg transition-colors ${isActive("/contact") ? "text-blue-700 bg-blue-50" : "text-slate-700 hover:text-blue-700 hover:bg-blue-50"}`}>
               {t.nav.contactUs}
             </button>
             {navLinks.map((link) => (
@@ -347,19 +358,33 @@ export default function Header() {
           {/* Language selector */}
           <div className="pt-3 border-t border-slate-100 mt-3">
             <p className="px-4 py-2 text-xs font-semibold text-slate-400 uppercase tracking-wider">Language</p>
-            <div className="grid grid-cols-4 gap-1.5 px-4">
+            <div className="flex flex-col gap-1 px-4">
               {locales.map((loc) => (
                 <button
                   key={loc.code}
                   onClick={() => setLocale(loc.code as Locale)}
-                  className={`flex flex-col items-center gap-0.5 px-2 py-2 text-xs rounded-lg transition-colors ${
+                  className={`flex items-center gap-2.5 px-3 py-2.5 text-xs rounded-lg transition-colors ${
                     locale === loc.code
                       ? "bg-blue-100 text-blue-700 font-semibold ring-1 ring-blue-200"
                       : "text-slate-600 hover:bg-slate-50"
                   }`}
                 >
-                  <FlagIcon code={loc.code} className="w-6 h-4" />
-                  <span className="text-[10px] font-medium uppercase tracking-wider">{loc.code}</span>
+                  <FlagIcon code={loc.code} className="w-5 h-3.5 shrink-0" />
+                  <span className="text-[13px] font-medium">
+                    {loc.name}
+                    {loc.code !== locale && (
+                      <span className="text-slate-400 font-normal"> ({languageNames[locale][loc.code]})</span>
+                    )}
+                  </span>
+                  {locale === loc.code && (
+                    <svg className="w-3.5 h-3.5 ml-auto text-blue-700 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  )}
                 </button>
               ))}
             </div>

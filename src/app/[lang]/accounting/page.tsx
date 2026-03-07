@@ -1,19 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
-
-import { LanguageProvider, useLanguage } from "@/lib/i18n/LanguageContext";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 function AccountingContent() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const a = t.accountingPage;
-
-  useEffect(() => {
-    document.title = a.hero.title + " | Paraguay Access";
-  }, [a.hero.title]);
 
   const serviceIcons = [
     // RUC - document/ID
@@ -63,7 +57,7 @@ function AccountingContent() {
 
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-28 w-full">
             <nav className="flex items-center gap-2 text-sm text-blue-200 mb-8">
-              <a href="/" className="hover:text-white transition-colors">{a.breadcrumb.home}</a>
+              <a href={`/${locale}`} className="hover:text-white transition-colors">{a.breadcrumb.home}</a>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
@@ -90,7 +84,7 @@ function AccountingContent() {
               </ul>
 
               <a
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="mt-10 inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg shadow-blue-900/20 text-base"
               >
                 {a.hero.cta}
@@ -234,7 +228,7 @@ function AccountingContent() {
               {a.cta.subtitle}
             </p>
             <a
-              href="/contact"
+              href={`/${locale}/contact`}
               className="mt-8 inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg text-base"
             >
               {a.cta.button}
@@ -252,9 +246,5 @@ function AccountingContent() {
 }
 
 export default function AccountingPage() {
-  return (
-    <LanguageProvider>
-      <AccountingContent />
-    </LanguageProvider>
-  );
+  return <AccountingContent />;
 }

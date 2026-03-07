@@ -1,20 +1,16 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
-import { LanguageProvider, useLanguage } from "@/lib/i18n/LanguageContext";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 function ResidencyContent() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const r = t.residencyPage;
   const [openFaq, setOpenFaq] = useState<number | null>(0);
-
-  useEffect(() => {
-    document.title = r.hero.title + " | Paraguay Access";
-  }, [r.hero.title]);
 
   type Currency = "USD" | "EUR" | "GBP" | "CAD" | "AUD" | "BRL" | "ARS";
   const [tempCurrency, setTempCurrency] = useState<Currency>("EUR");
@@ -90,7 +86,7 @@ function ResidencyContent() {
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-28 w-full">
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-sm text-blue-200 mb-8">
-              <a href="/" className="hover:text-white transition-colors">{r.breadcrumb.home}</a>
+              <a href={`/${locale}`} className="hover:text-white transition-colors">{r.breadcrumb.home}</a>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
@@ -119,7 +115,7 @@ function ResidencyContent() {
 
               {/* CTA */}
               <a
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="mt-10 inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg shadow-blue-900/20 text-base"
               >
                 {r.hero.cta}
@@ -338,7 +334,7 @@ function ResidencyContent() {
                 {r.guideCta.description}
               </p>
               <a
-                href="/residency/guide"
+                href={`/${locale}/residency/guide`}
                 className="inline-flex items-center gap-2 bg-red-500 text-white font-bold px-8 py-3.5 rounded-full hover:bg-red-600 transition-all text-sm whitespace-nowrap"
               >
                 {r.guideCta.button}
@@ -439,7 +435,7 @@ function ResidencyContent() {
                 </div>
 
                 <a
-                  href="/contact"
+                  href={`/${locale}/contact`}
                   className="inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg text-base"
                 >
                   {r.support.cta}
@@ -513,9 +509,5 @@ function ResidencyContent() {
 }
 
 export default function ResidencyPage() {
-  return (
-    <LanguageProvider>
-      <ResidencyContent />
-    </LanguageProvider>
-  );
+  return <ResidencyContent />;
 }

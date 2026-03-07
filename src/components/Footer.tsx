@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+  const lp = (path: string) => (path === "/" ? `/${locale}` : `/${locale}${path}`);
 
   return (
     <footer className="bg-slate-900 text-slate-300">
@@ -13,7 +14,7 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <a href="/" className="inline-block mb-6 -ml-4">
+            <a href={lp("/")} className="inline-block mb-6 -ml-4">
               <Image
                 src="/images/logo-white.png"
                 alt="Paraguay Access"
@@ -34,17 +35,17 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="/residency" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href={lp("/residency")} className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   {t.footer.residency}
                 </a>
               </li>
               <li>
-                <a href="/accounting" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href={lp("/accounting")} className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   {t.footer.accountingTax}
                 </a>
               </li>
               <li>
-                <a href="/company-formation" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href={lp("/company-formation")} className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   {t.footer.companyFormation}
                 </a>
               </li>
@@ -58,22 +59,22 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="/about" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href={lp("/about")} className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   {t.footer.aboutUs}
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href={lp("/contact")} className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   {t.footer.contact}
                 </a>
               </li>
               <li>
-                <a href="/privacy" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href={lp("/privacy")} className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   {t.footer.privacy}
                 </a>
               </li>
               <li>
-                <a href="/terms" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                <a href={lp("/terms")} className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
                   {t.footer.terms}
                 </a>
               </li>
@@ -121,10 +122,10 @@ export default function Footer() {
             © {new Date().getFullYear()} Paraguay Access. {t.footer.rights}
           </p>
           <div className="flex gap-6">
-            <a href="/privacy" className="text-sm text-slate-500 hover:text-slate-300 transition-colors">
+            <a href={lp("/privacy")} className="text-sm text-slate-500 hover:text-slate-300 transition-colors">
               {t.footer.privacy}
             </a>
-            <a href="/terms" className="text-sm text-slate-500 hover:text-slate-300 transition-colors">
+            <a href={lp("/terms")} className="text-sm text-slate-500 hover:text-slate-300 transition-colors">
               {t.footer.terms}
             </a>
           </div>

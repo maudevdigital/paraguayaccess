@@ -1,18 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
-import { LanguageProvider, useLanguage } from "@/lib/i18n/LanguageContext";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 function PrivacyContent() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const p = t.privacyPage;
-
-  useEffect(() => {
-    document.title = p.pageTitle;
-  }, [p.pageTitle]);
 
   return (
     <>
@@ -28,7 +23,7 @@ function PrivacyContent() {
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-24">
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-sm text-blue-200 mb-8">
-              <a href="/" className="hover:text-white transition-colors">
+              <a href={`/${locale}`} className="hover:text-white transition-colors">
                 {p.breadcrumb.home}
               </a>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -82,9 +77,5 @@ function PrivacyContent() {
 }
 
 export default function PrivacyPage() {
-  return (
-    <LanguageProvider>
-      <PrivacyContent />
-    </LanguageProvider>
-  );
+  return <PrivacyContent />;
 }

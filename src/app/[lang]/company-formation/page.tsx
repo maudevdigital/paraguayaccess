@@ -1,19 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
-
-import { LanguageProvider, useLanguage } from "@/lib/i18n/LanguageContext";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 function CompanyFormationContent() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const c = t.companyFormationPage;
-
-  useEffect(() => {
-    document.title = c.hero.title + " | Paraguay Access";
-  }, [c.hero.title]);
 
   const whyUsIcons = [
     // Experienced team - users
@@ -67,7 +61,7 @@ function CompanyFormationContent() {
 
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-28 w-full">
             <nav className="flex items-center gap-2 text-sm text-blue-200 mb-8">
-              <a href="/" className="hover:text-white transition-colors">{c.breadcrumb.home}</a>
+              <a href={`/${locale}`} className="hover:text-white transition-colors">{c.breadcrumb.home}</a>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
@@ -94,7 +88,7 @@ function CompanyFormationContent() {
               </ul>
 
               <a
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="mt-10 inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg shadow-blue-900/20 text-base"
               >
                 {c.hero.cta}
@@ -248,7 +242,7 @@ function CompanyFormationContent() {
               {c.cta.subtitle}
             </p>
             <a
-              href="/contact"
+              href={`/${locale}/contact`}
               className="mt-8 inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg text-base"
             >
               {c.cta.button}
@@ -266,9 +260,5 @@ function CompanyFormationContent() {
 }
 
 export default function CompanyFormationPage() {
-  return (
-    <LanguageProvider>
-      <CompanyFormationContent />
-    </LanguageProvider>
-  );
+  return <CompanyFormationContent />;
 }

@@ -1,19 +1,14 @@
 "use client";
 
-import { useEffect } from "react";
-import { LanguageProvider, useLanguage } from "@/lib/i18n/LanguageContext";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 function GuideContent() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const g = t.residencyPage.guidePage;
   const s = g.sections;
-
-  useEffect(() => {
-    document.title = g.pageTitle;
-  }, [g.pageTitle]);
 
   return (
     <>
@@ -23,11 +18,11 @@ function GuideContent() {
         <section className="bg-blue-700 pt-32 pb-16 lg:pt-40 lg:pb-20">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <nav className="flex items-center gap-2 text-sm text-blue-200 mb-6">
-              <a href="/" className="hover:text-white transition-colors">{t.residencyPage.breadcrumb.home}</a>
+              <a href={`/${locale}`} className="hover:text-white transition-colors">{t.residencyPage.breadcrumb.home}</a>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
-              <a href="/residency" className="hover:text-white transition-colors">{t.residencyPage.breadcrumb.residency}</a>
+              <a href={`/${locale}/residency`} className="hover:text-white transition-colors">{t.residencyPage.breadcrumb.residency}</a>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
@@ -152,7 +147,7 @@ function GuideContent() {
             {/* CTA */}
             <div className="text-center py-8 border-t border-slate-200">
               <a
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="inline-flex items-center gap-2 bg-blue-700 text-white font-bold px-10 py-4 rounded-xl hover:bg-blue-800 transition-all shadow-lg text-base"
               >
                 {g.cta}
@@ -171,9 +166,5 @@ function GuideContent() {
 }
 
 export default function GuidePage() {
-  return (
-    <LanguageProvider>
-      <GuideContent />
-    </LanguageProvider>
-  );
+  return <GuideContent />;
 }
