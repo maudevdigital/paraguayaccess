@@ -33,7 +33,7 @@ export async function generateMetadata({
     keywords: [
       "Paraguay residency", "tax residency Paraguay", "Paraguay relocation",
       "Paraguay tax advisory", "company formation Paraguay", "digital nomad Paraguay",
-      "expat services Paraguay", "Paraguay territorial tax", "Paraguay 0 tax foreign income",
+      "expat services Paraguay", "Paraguay territorial tax", "Paraguay territorial tax system",
       "residencia en Paraguay", "residencia fiscal Paraguay", "mudarse a Paraguay",
       "residência no Paraguai", "residência fiscal Paraguai", "mudar para o Paraguai",
       "résidence au Paraguay", "résidence fiscale Paraguay",
@@ -171,8 +171,8 @@ function JsonLd({ locale }: { locale: Locale }) {
           { "@type": "Country", name: "Greece" },
         ],
         serviceType: [
-          "Tax Residency Services",
-          "Personal Residency Services",
+          "Residency & Tax Compliance Services",
+          "Residency Permit Services",
           "Accounting & Tax Services",
           "Company Formation",
           "Fiscal Planning",
@@ -195,7 +195,7 @@ function JsonLd({ locale }: { locale: Locale }) {
               itemOffered: {
                 "@type": "Service",
                 name: "Permanent Residency in Paraguay",
-                description: "Immediate permanent residency through investment. Includes company formation and fast-tracked documents.",
+                description: "Permanent residency for qualifying applicants, including the SUACE investment route. Includes company formation and document processing.",
               },
             },
             {
@@ -252,7 +252,7 @@ function JsonLd({ locale }: { locale: Locale }) {
             name: "Do I need to live in Paraguay to maintain residency?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Paraguay has no minimum stay requirement for maintaining residency. You only need to visit the country at least once every 3 years to keep your residency active.",
+              text: "Paraguay has flexible presence requirements for maintaining migration residency. Note that migration residency and fiscal residency have separate rules. Consult a qualified advisor for your specific situation.",
             },
           },
           {
@@ -260,7 +260,7 @@ function JsonLd({ locale }: { locale: Locale }) {
             name: "What is Paraguay's tax system for residents?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Paraguay uses a territorial tax system, meaning only income generated within Paraguay is taxed. Foreign-sourced income is taxed at 0%. The corporate tax rate is a flat 10%.",
+              text: "Paraguay uses a territorial tax system, meaning only Paraguayan-source income is subject to tax. The IRE corporate rate is 10%, and the IRP personal income rate ranges from 8% to 10% depending on the bracket. Consult a tax advisor for details specific to your situation.",
             },
           },
           {

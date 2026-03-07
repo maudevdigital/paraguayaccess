@@ -22,12 +22,12 @@ export const seoData: Record<Locale, LocaleSeo> = {
     home: {
       title: "Paraguay Access | Residency, Tax Advisory & Relocation Services in Paraguay",
       description:
-        "Expert firm helping individuals and businesses obtain personal and tax residency in Paraguay. 0% tax on foreign income, fast residency process, no minimum stay. Accounting, fiscal planning, company formation & compliance for expats, digital nomads & investors.",
+        "Expert firm helping individuals and businesses with residency and tax compliance in Paraguay. Territorial tax system, streamlined residency process, flexible presence requirements. Accounting, fiscal planning, company formation & compliance for expats, digital nomads & investors.",
     },
     residency: {
       title: "Residency Services in Paraguay | Temporary & Permanent Residency 2026",
       description:
-        "Get temporary or permanent residency in Paraguay. 0% tax on foreign income, no minimum stay, fast processing. Complete assistance from document preparation to cédula. 750+ clients from 40+ countries. Prices for 2026.",
+        "Get temporary or permanent residency in Paraguay. Territorial tax system, flexible presence requirements, streamlined processing. Complete assistance from document preparation to cédula. 750+ clients from 40+ countries. Prices for 2026.",
     },
     residencyGuide: {
       title: "Residency Program in Paraguay | Complete Guide 2026",
@@ -37,12 +37,12 @@ export const seoData: Record<Locale, LocaleSeo> = {
     accounting: {
       title: "Accounting & Tax Services in Paraguay | RUC, Bookkeeping & Compliance",
       description:
-        "Professional accounting and tax services in Paraguay. RUC registration, monthly bookkeeping, tax filing, fiscal consulting, and compliance for residents and businesses. 10% flat corporate tax.",
+        "Professional accounting and tax services in Paraguay. RUC registration, monthly bookkeeping, tax filing, fiscal consulting, and compliance for residents and businesses. 10% IRE corporate tax.",
     },
     companyFormation: {
       title: "Company Formation in Paraguay | S.A. & S.R.L. Setup 2026",
       description:
-        "Set up your business in Paraguay. Full company incorporation (S.A. or S.R.L.), RUC registration, bank account opening, and ongoing corporate compliance. Low 10% corporate tax.",
+        "Set up your business in Paraguay. Full company incorporation (S.A. or S.R.L.), RUC registration, bank account opening, and ongoing corporate compliance. Competitive 10% IRE corporate tax.",
     },
     about: {
       title: "About Paraguay Access | Residency & Tax Experts in Paraguay",
@@ -69,12 +69,12 @@ export const seoData: Record<Locale, LocaleSeo> = {
     home: {
       title: "Paraguay Access | Residencia, Asesoría Fiscal y Reubicación en Paraguay",
       description:
-        "Firma especializada en residencia personal y fiscal en Paraguay. 0% impuestos sobre ingresos del exterior, proceso rápido, sin estadía mínima. Contabilidad, planificación fiscal, constitución de empresas y cumplimiento para expatriados, nómadas digitales e inversores.",
+        "Firma especializada en residencia y cumplimiento fiscal en Paraguay. Sistema fiscal territorial, proceso ágil, requisitos de presencia flexibles. Contabilidad, planificación fiscal, constitución de empresas y cumplimiento para expatriados, nómadas digitales e inversores.",
     },
     residency: {
       title: "Residencia en Paraguay | Residencia Temporal y Permanente 2026",
       description:
-        "Obtén residencia temporal o permanente en Paraguay. 0% impuestos sobre ingresos del exterior, sin estadía mínima, proceso rápido. Asistencia completa desde la preparación de documentos hasta la cédula. Precios 2026.",
+        "Obtén residencia temporal o permanente en Paraguay. Sistema fiscal territorial, requisitos de presencia flexibles, proceso ágil. Asistencia completa desde la preparación de documentos hasta la cédula. Precios 2026.",
     },
     residencyGuide: {
       title: "Programa de Residencia en Paraguay | Guía Completa 2026",
@@ -84,7 +84,7 @@ export const seoData: Record<Locale, LocaleSeo> = {
     accounting: {
       title: "Contabilidad e Impuestos en Paraguay | RUC, Teneduría y Cumplimiento",
       description:
-        "Servicios profesionales de contabilidad e impuestos en Paraguay. Registro de RUC, teneduría mensual, declaraciones fiscales, consultoría fiscal y cumplimiento para residentes y empresas. Impuesto corporativo del 10%.",
+        "Servicios profesionales de contabilidad e impuestos en Paraguay. Registro de RUC, teneduría mensual, declaraciones fiscales, consultoría fiscal y cumplimiento para residentes y empresas. IRE del 10%.",
     },
     companyFormation: {
       title: "Constitución de Empresas en Paraguay | S.A. y S.R.L. 2026",
@@ -116,12 +116,12 @@ export const seoData: Record<Locale, LocaleSeo> = {
     home: {
       title: "Paraguay Access | Residência, Assessoria Fiscal e Relocação no Paraguai",
       description:
-        "Firma especializada em residência pessoal e fiscal no Paraguai. 0% imposto sobre renda do exterior, processo rápido, sem estadia mínima. Contabilidade, planejamento fiscal, constituição de empresas e conformidade para expatriados, nômades digitais e investidores.",
+        "Firma especializada em residência e conformidade fiscal no Paraguai. Sistema fiscal territorial, processo ágil, requisitos de presença flexíveis. Contabilidade, planejamento fiscal, constituição de empresas e conformidade para expatriados, nômades digitais e investidores.",
     },
     residency: {
       title: "Residência no Paraguai | Residência Temporária e Permanente 2026",
       description:
-        "Obtenha residência temporária ou permanente no Paraguai. 0% imposto sobre renda do exterior, sem estadia mínima, processo rápido. Assistência completa desde preparação de documentos até a cédula. Preços 2026.",
+        "Obtenha residência temporária ou permanente no Paraguai. Sistema fiscal territorial, requisitos de presença flexíveis, processo ágil. Assistência completa desde preparação de documentos até a cédula. Preços 2026.",
     },
     residencyGuide: {
       title: "Programa de Residência no Paraguai | Guia Completo 2026",
@@ -131,7 +131,7 @@ export const seoData: Record<Locale, LocaleSeo> = {
     accounting: {
       title: "Contabilidade e Impostos no Paraguai | RUC, Escrituração e Conformidade",
       description:
-        "Serviços profissionais de contabilidade e impostos no Paraguai. Registro de RUC, escrituração mensal, declarações fiscais, consultoria fiscal e conformidade. Imposto corporativo de 10%.",
+        "Serviços profissionais de contabilidade e impostos no Paraguai. Registro de RUC, escrituração mensal, declarações fiscais, consultoria fiscal e conformidade. IRE de 10%.",
     },
     companyFormation: {
       title: "Constituição de Empresas no Paraguai | S.A. e S.R.L. 2026",
@@ -161,12 +161,12 @@ export const seoData: Record<Locale, LocaleSeo> = {
     home: {
       title: "Paraguay Access | Résidence, Conseil Fiscal et Relocalisation au Paraguay",
       description:
-        "Cabinet spécialisé en résidence personnelle et fiscale au Paraguay. 0% d'impôt sur les revenus étrangers, processus rapide, sans séjour minimum. Comptabilité, planification fiscale, création d'entreprise et conformité.",
+        "Cabinet spécialisé en résidence et conformité fiscale au Paraguay. Système fiscal territorial, processus simplifié, exigences de présence flexibles. Comptabilité, planification fiscale, création d'entreprise et conformité.",
     },
     residency: {
       title: "Résidence au Paraguay | Résidence Temporaire et Permanente 2026",
       description:
-        "Obtenez votre résidence temporaire ou permanente au Paraguay. 0% d'impôt sur les revenus étrangers, sans séjour minimum, processus rapide. Assistance complète. Prix 2026.",
+        "Obtenez votre résidence temporaire ou permanente au Paraguay. Système fiscal territorial, exigences de présence flexibles, processus simplifié. Assistance complète. Prix 2026.",
     },
     residencyGuide: {
       title: "Programme de Résidence au Paraguay | Guide Complet 2026",
@@ -176,7 +176,7 @@ export const seoData: Record<Locale, LocaleSeo> = {
     accounting: {
       title: "Comptabilité et Fiscalité au Paraguay | RUC, Tenue de Livres et Conformité",
       description:
-        "Services professionnels de comptabilité et fiscalité au Paraguay. Enregistrement RUC, comptabilité mensuelle, déclarations fiscales, conseil fiscal et conformité. Impôt sur les sociétés de 10%.",
+        "Services professionnels de comptabilité et fiscalité au Paraguay. Enregistrement RUC, comptabilité mensuelle, déclarations fiscales, conseil fiscal et conformité. IRE de 10%.",
     },
     companyFormation: {
       title: "Création d'Entreprise au Paraguay | S.A. et S.R.L. 2026",
@@ -206,12 +206,12 @@ export const seoData: Record<Locale, LocaleSeo> = {
     home: {
       title: "Paraguay Access | Residenza, Consulenza Fiscale e Trasferimento in Paraguay",
       description:
-        "Studio specializzato in residenza personale e fiscale in Paraguay. 0% tasse sui redditi esteri, processo rapido, senza soggiorno minimo. Contabilità, pianificazione fiscale, costituzione società e conformità.",
+        "Studio specializzato in residenza e conformità fiscale in Paraguay. Sistema fiscale territoriale, processo semplificato, requisiti di presenza flessibili. Contabilità, pianificazione fiscale, costituzione società e conformità.",
     },
     residency: {
       title: "Residenza in Paraguay | Residenza Temporanea e Permanente 2026",
       description:
-        "Ottieni la residenza temporanea o permanente in Paraguay. 0% tasse sui redditi esteri, senza soggiorno minimo, processo rapido. Assistenza completa dalla preparazione documenti alla cédula. Prezzi 2026.",
+        "Ottieni la residenza temporanea o permanente in Paraguay. Sistema fiscale territoriale, requisiti di presenza flessibili, processo semplificato. Assistenza completa dalla preparazione documenti alla cédula. Prezzi 2026.",
     },
     residencyGuide: {
       title: "Programma di Residenza in Paraguay | Guida Completa 2026",
@@ -221,7 +221,7 @@ export const seoData: Record<Locale, LocaleSeo> = {
     accounting: {
       title: "Contabilità e Fisco in Paraguay | RUC, Contabilità e Conformità",
       description:
-        "Servizi professionali di contabilità e fisco in Paraguay. Registrazione RUC, contabilità mensile, dichiarazioni fiscali, consulenza fiscale e conformità. Imposta societaria del 10%.",
+        "Servizi professionali di contabilità e fisco in Paraguay. Registrazione RUC, contabilità mensile, dichiarazioni fiscali, consulenza fiscale e conformità. IRE del 10%.",
     },
     companyFormation: {
       title: "Costituzione Società in Paraguay | S.A. e S.R.L. 2026",
@@ -251,12 +251,12 @@ export const seoData: Record<Locale, LocaleSeo> = {
     home: {
       title: "Paraguay Access | Резидентство, Налоговое Консультирование и Переезд в Парагвай",
       description:
-        "Специализированная фирма по получению личного и налогового резидентства в Парагвае. 0% налогов на иностранный доход, быстрый процесс, без минимального пребывания. Бухгалтерия, налоговое планирование, регистрация компаний.",
+        "Специализированная фирма по резидентству и налоговому соответствию в Парагвае. Территориальная налоговая система, упрощённый процесс, гибкие требования к пребыванию. Бухгалтерия, налоговое планирование, регистрация компаний.",
     },
     residency: {
       title: "Резидентство в Парагвае | Временное и Постоянное Резидентство 2026",
       description:
-        "Получите временное или постоянное резидентство в Парагвае. 0% налогов на иностранный доход, без минимального пребывания, быстрое оформление. Полное сопровождение. Цены 2026.",
+        "Получите временное или постоянное резидентство в Парагвае. Территориальная налоговая система, гибкие требования к пребыванию, упрощённое оформление. Полное сопровождение. Цены 2026.",
     },
     residencyGuide: {
       title: "Программа Резидентства в Парагвае | Полное Руководство 2026",
@@ -266,7 +266,7 @@ export const seoData: Record<Locale, LocaleSeo> = {
     accounting: {
       title: "Бухгалтерия и Налоги в Парагвае | RUC, Учёт и Соответствие",
       description:
-        "Профессиональные бухгалтерские и налоговые услуги в Парагвае. Регистрация RUC, ежемесячный учёт, налоговые декларации, консультации и соответствие. Корпоративный налог 10%.",
+        "Профессиональные бухгалтерские и налоговые услуги в Парагвае. Регистрация RUC, ежемесячный учёт, налоговые декларации, консультации и соответствие. IRE 10%.",
     },
     companyFormation: {
       title: "Регистрация Компании в Парагвае | S.A. и S.R.L. 2026",
@@ -296,12 +296,12 @@ export const seoData: Record<Locale, LocaleSeo> = {
     home: {
       title: "Paraguay Access | Κατοικία, Φορολογική Συμβουλευτική και Μετεγκατάσταση στην Παραγουάη",
       description:
-        "Εξειδικευμένη εταιρεία για προσωπική και φορολογική κατοικία στην Παραγουάη. 0% φόρος στο εισόδημα εξωτερικού, γρήγορη διαδικασία, χωρίς ελάχιστη παραμονή. Λογιστική, φορολογικός σχεδιασμός, ίδρυση εταιρείας.",
+        "Εξειδικευμένη εταιρεία για κατοικία και φορολογική συμμόρφωση στην Παραγουάη. Εδαφικό φορολογικό σύστημα, εξορθολογισμένη διαδικασία, ευέλικτες απαιτήσεις παρουσίας. Λογιστική, φορολογικός σχεδιασμός, ίδρυση εταιρείας.",
     },
     residency: {
       title: "Κατοικία στην Παραγουάη | Προσωρινή και Μόνιμη Κατοικία 2026",
       description:
-        "Αποκτήστε προσωρινή ή μόνιμη κατοικία στην Παραγουάη. 0% φόρος σε εισόδημα εξωτερικού, χωρίς ελάχιστη παραμονή, γρήγορη διαδικασία. Πλήρης υποστήριξη. Τιμές 2026.",
+        "Αποκτήστε προσωρινή ή μόνιμη κατοικία στην Παραγουάη. Εδαφικό φορολογικό σύστημα, ευέλικτες απαιτήσεις παρουσίας, εξορθολογισμένη διαδικασία. Πλήρης υποστήριξη. Τιμές 2026.",
     },
     residencyGuide: {
       title: "Πρόγραμμα Κατοικίας στην Παραγουάη | Πλήρης Οδηγός 2026",

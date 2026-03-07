@@ -7,18 +7,18 @@
     blog: "Blog",
     getStarted: "Get Started",
     residency: "Residency",
-    residencyDesc: "Personal & tax residency permits",
+    residencyDesc: "Residency permits & RUC support",
     accountingTax: "Accounting & Tax",
     accountingTaxDesc: "Tax management & fiscal compliance",
     companyFormation: "Company Formation",
     companyFormationDesc: "Business setup & corporate services",
   },
   hero: {
-    badge: "Tax Residency Experts",
-    title: "Your Expert Partner for Tax Residency in",
+    badge: "Residency & Tax Compliance Experts",
+    title: "Your Expert Partner for Residency, RUC & Tax Compliance in",
     titleHighlight: "Paraguay",
     subtitle:
-      "We help individuals and businesses secure personal and tax residency in Paraguay. From permits to accounting and compliance, our team ensures you stay aligned with domestic and international tax laws.",
+      "We help individuals and businesses obtain residency in Paraguay and stay compliant with local tax obligations. From permits and RUC registration to accounting and compliance, our team guides you through every step.",
     cta: "Get in Touch",
     ctaSecondary: "Discover Our Services",
     stats: {
@@ -39,7 +39,7 @@
       description:
         "We manage the entire residency process , from initial strategy to obtaining your temporary and permanent permits, with dedicated legal support at every stage.",
       features: [
-        "Personal & Tax Residency",
+        "Residency Permits & RUC Support",
         "Temporary & Permanent Permits",
         "Document Apostille & Legalization",
         "Full Immigration Compliance",
@@ -74,7 +74,7 @@
     title: "Why Choose",
     titleHighlight: "Paraguay Access?",
     description:
-      "We are a specialized firm focused on helping individuals and businesses with personal and tax residency in Paraguay. We also provide accounting, fiscal planning, and domicile services to make sure your situation always remains compliant with domestic and international tax laws.",
+      "We are a specialized firm focused on helping individuals and businesses obtain residency in Paraguay. We also provide accounting, fiscal planning, and domicile services to make sure your situation always remains compliant with domestic and international tax laws.",
     description2:
       "Our team combines local expertise with international perspective. We understand the complexities of cross-border taxation and relocation, delivering personalized strategies designed for your specific needs.",
     values: {
@@ -103,29 +103,29 @@
   whyParaguay: {
     sectionTag: "Why Paraguay?",
     title: "Your Ideal Destination for",
-    titleHighlight: "Tax Residency",
+    titleHighlight: "Residency & Business",
     subtitle:
-      "Paraguay offers unparalleled benefits for tax residents , a territorial tax system, fast residency process, and a business-friendly environment that attracts entrepreneurs worldwide.",
+      "Paraguay offers compelling advantages for residents: a territorial tax system, a straightforward residency process, and a business-friendly environment that attracts entrepreneurs worldwide.",
     reasons: [
       {
-        title: "0% Tax on Foreign Income",
+        title: "Territorial Tax System",
         description:
-          "Paraguay's territorial tax system means zero taxes on income earned outside the country , ideal for international entrepreneurs and remote professionals.",
+          "Paraguay generally taxes Paraguayan-source income. As a general rule, income from activities performed outside Paraguay is outside Paraguayan income-tax scope; however, source rules depend on where the activity is carried out and whether goods or rights are located or economically used in Paraguay.",
       },
       {
-        title: "No Minimum Presence Required",
+        title: "Flexible Presence Rules",
         description:
-          "Unlike many countries, Paraguay does not require a minimum number of days in-country to maintain your tax residency status.",
+          "Paraguay does not use a standard annual-day test like many countries, but migration residence can be lost after unjustified absences (12 months for temporary, 36 for permanent) under current law. Tax residency is a separate concept linked to DNIT criteria.",
       },
       {
-        title: "No Capital Gains Tax",
+        title: "Territorial Capital Gains Rules",
         description:
-          "Enjoy zero taxes on capital gains from non-Paraguayan assets, making it a prime destination for investors and portfolio managers.",
+          "Capital gains on Paraguayan-source assets are generally taxed at 8% for individuals. Gains on non-Paraguayan assets are generally outside Paraguayan tax scope, subject to source rules and case-specific analysis.",
       },
       {
-        title: "Fast Residency Process",
+        title: "Streamlined Residency Process",
         description:
-          "Obtain your temporary residency in just a few weeks, with a clear and straightforward path to permanent residency and citizenship.",
+          "Begin your residency application in a single short trip, with documents typically processed within 35 to 105 days depending on authority workload. Timelines are estimated and subject to change.",
       },
       {
         title: "Low Cost of Living",
@@ -197,10 +197,10 @@
     ],
   },
   cta: {
-    title: "Ready to Secure Your",
-    titleHighlight: "Tax Residency in Paraguay?",
+    title: "Ready to Start Your",
+    titleHighlight: "Residency Process in Paraguay?",
     subtitle:
-      "Schedule a free consultation with our team and discover how we can help you with residency, tax optimization, and full compliance.",
+      "Schedule a free consultation with our team and discover how we can help you with residency, tax compliance, and business setup.",
     button: "Schedule Free Consultation",
     buttonSecondary: "Contact Us",
   },
@@ -214,7 +214,7 @@
         "Temporary Residency or Immediate Permanent Residency",
         "No upfront payment required",
         "Assistance before, during, and after the process",
-        "Tax Residency included",
+        "RUC registration and tax onboarding included",
       ],
       cta: "Get in Touch",
     },
@@ -234,7 +234,7 @@
         {
           title: "Residency",
           description:
-            "After submitting your application, you will receive your Temporary Residency card within a few weeks.",
+            "After submitting your application, your Temporary Residency card is typically processed within 35 to 105 days, depending on the method chosen.",
         },
         {
           title: "Cédula (ID Card)",
@@ -275,16 +275,16 @@
       },
       permanent: {
         name: "Immediate Permanent Residency",
-        tag: "Full Package · Requires 10,000 USD Investment",
+        tag: "Full Package · Direct Permanent Residency for Qualifying SUACE Investors",
         price: "29,750,000",
         features: [
-          "Immediate permanent residency",
+          "Direct permanent residency via SUACE investor route",
           "Everything included in the Temporary package",
           "1 short trip of ~10 business days",
           "Comprehensive mandatory business plan",
-          "SUACE investor visa processing",
+          "SUACE investor constancia processing",
           "Company formation included",
-          "Fast-tracked Residency card and ID card",
+          "Expedited Residency card and ID card processing",
           "Real estate investment guidance",
           "Full concierge service",
         ],
@@ -300,14 +300,14 @@
       title: "Residency Program in Paraguay: How It Works in 2026",
       date: "Updated: March 2026",
       intro1: "Paraguay stands out as one of the easiest and most convenient countries to obtain a second residency. Its favorable tax system makes it a popular destination for those seeking a secondary residency, not only for themselves but also for their business. The laws governing the residency process in Paraguay have undergone significant changes, especially in 2020 and again in 2022, introducing several updates regarding prerequisites and steps to obtain residency.",
-      intro2: "Over the years, our team has helped more than 500 people from around the world take advantage of Paraguay's residency program. In this guide, we will review all available options and their requirements. If you are looking for a personalized consultation, we also remind you that you can contact us and receive specialized assistance.",
+      intro2: "Over the years, our team has helped more than 750 people from around the world take advantage of Paraguay's residency program. In this guide, we will review all available options and their requirements. If you are looking for a personalized consultation, we also remind you that you can contact us and receive specialized assistance.",
       sections: {
         tempAndPerm: {
           title: "Temporary and Permanent Residency",
           intro: "The first thing you should know about Paraguay's residency program is that there are two main options:",
           tempOption: "Temporary residency is valid for 2 years, with the possibility of renewal and conversion to permanent residency.",
           permOption: "Permanent residency grants indefinite residency in the country and requires renewal every 10 years.",
-          outro: "The rights obtained with both options are exactly the same. The only differences between the two types of residency are their validity periods and requirements. Currently, the most straightforward and cost-effective route is to first obtain temporary residency and then convert it to permanent residency.",
+          outro: "Both statuses allow lawful residence in Paraguay, but they are not identical for every legal and tax purpose. Temporary residence is usually the first step; permanent residence may be relevant for additional tax and long-term status considerations. Currently, the most straightforward and cost-effective route is to first obtain temporary residency and then convert it to permanent residency.",
         },
         temporary: {
           title: "Temporary Residency",
@@ -318,19 +318,19 @@
           step3: "After the temporary residency card, you can go to the Paraguayan Police Identification Department to obtain the ID card (cedula). As of September 2024, it has become strictly necessary to apply for the new ID card format. This is the format that incorporates the microchip and can only be obtained through electronic fingerprints and digital signature.",
           note1: "If you apply for residency on your own, you will need to apply for the ID card only after your residency card has been processed. If you apply with the help of a specialized immigration firm, you could apply for the ID card before your residency card is printed. The ID card will only be ready after the residency card, but through this opportunity you can apply for both documents in a single short trip.",
           note2: "If you want to apply for the ID card after your residency card is printed, you will need to stay in Paraguay during the wait or schedule a second trip. If you apply for the ID card before your residency card is printed, you could stay in Paraguay for only 3-4 business days and complete the application for both documents.",
-          benefits: "At this point, all the benefits of a residency are granted. You can obtain a driver's license, open a bank account, establish a business, purchase property and, depending on specific circumstances, be subject to Paraguayan taxes.",
+          benefits: "At this point, you may access various benefits such as applying for a driver's license, establishing a business, or purchasing property. Bank-account opening is facilitated but always depends on each bank's KYC review. Depending on your specific circumstances, you may also become subject to Paraguayan taxes.",
         },
         permanent: {
           title: "Permanent Residency",
           intro: "Permanent residency grants the right to reside indefinitely in Paraguay, with the provision of renewing it every 10 years.",
           routesIntro: "There are two routes to obtain permanent residency:",
           route1: "The simplest method is to first obtain temporary residency and then convert it to permanent. You are allowed to switch your temporary residency to permanent after 21 months. In this case, you will need to show very basic proof of solvency.",
-          route2: "Alternatively, you can directly obtain permanent residency through investment. This requires a commitment to invest at least $70,000 in the country, presenting a detailed business plan showing how the money will be invested. To obtain permanent residency this way, you only need to show a bank account with more than $70,000 in funds, then the applicant is given 6 months to execute the business plan.",
+          route2: "Alternatively, you can directly obtain permanent residency through the SUACE investor route. Under the current public SUACE criteria, this requires a qualifying project, documentary support of economic capacity, a minimum planned investment of USD 70,000, at least 5 direct hires, and execution within up to 24 months.",
           investBenefitsIntro: "Some of the benefits of obtaining permanent residency through investment include:",
           investBenefits: [
-            "Better opportunities to open a bank account in Paraguay",
-            "Faster processing of the residency card and ID card, which on average are ready in 30 days",
-            "Faster route to citizenship in Paraguay, after 3 years of permanent residency",
+            "We assist with bank-account opening, but final approval depends on each bank's compliance and KYC review",
+            "Typically faster processing of the residency card and ID card (timelines vary by authority workload)",
+            "Permanent residence may support later eligibility to apply for naturalization, subject to constitutional and judicial requirements (including a minimum of 3 years of permanent residency, among other criteria)",
           ],
         },
         stayRequirements: {
@@ -345,24 +345,24 @@
           title: "What Are the Benefits of Paraguay's Residency Program?",
           intro: "Paraguay offers a unique set of advantages, especially for those seeking an attractive tax system and a fast-growing economy. Among the reasons that drive thousands to relocate their residency here each year are:",
           items: [
-            "A corporate tax rate of 10% on net profits or 3% on revenue under the small business regime.",
-            "Foreign tax exemption guarantees no taxation on income generated abroad by companies or individuals.",
-            "A capital gains tax rate of only 8%, which does not apply to gains obtained from cryptocurrencies or capital gains realized abroad.",
-            "Banking secrecy.",
-            "No need to physically stay in the country to maintain residency.",
+            "Corporate taxation depends on the applicable regime. IRE General and SIMPLE are generally 10% on net profits; RESIMPLE follows a simplified quota system based on revenue brackets.",
+            "Under the territorial tax system, income generated abroad by companies or individuals is currently not subject to Paraguayan taxation.",
+            "Capital gains on Paraguayan-source assets are generally taxed at 8% for individuals. Gains on non-Paraguayan assets are generally outside Paraguayan tax scope, subject to source rules. The tax treatment of crypto assets should be analyzed case by case depending on the taxpayer, the operation, and the applicable Paraguayan-source rules.",
+            "Banking confidentiality protections under current regulations.",
+            "Paraguay does not use a standard annual-day test, but migration residence can be lost after unjustified absences (12 months for temporary, 36 for permanent). Tax residency is a separate concept.",
             "Laws are especially favorable for entrepreneurs and investors, even more so for those bringing foreign capital.",
             "The nation is not blacklisted and allows unrestricted movement of capital.",
             "The criteria and costs for obtaining and maintaining residency are among the most competitive in the world.",
             "The Guarani is the oldest currency in Latin America, maintaining an average inflation rate of less than 3% over the last 50 years.",
             "For those considering opening a manufacturing business, Paraguay's low labor and energy costs make it an attractive proposition.",
           ],
-          nomadNote: "This program is especially attractive for digital nomads. It is completely feasible and legal to transfer residency to Paraguay, travel around the world throughout the year, and still maintain formal residency in the country. This way, one is subject to Paraguay's modest taxes and, if desired, can legitimately receive income in dollar accounts or in banks located elsewhere. If you are curious about how you could specifically benefit from obtaining residency in Paraguay, do not hesitate to get in touch.",
+          nomadNote: "This program is often considered by digital nomads. It is feasible and legal to obtain residency in Paraguay, though maintaining it requires compliance with absence rules under migration law. Tax obligations depend on individual circumstances and applicable source rules. If you are curious about how obtaining residency in Paraguay could work for your specific situation, do not hesitate to get in touch.",
         },
       },
       cta: "Contact Us",
     },
     info: {
-      title: "Residency in Paraguay in a Matter of Weeks",
+      title: "Residency in Paraguay: A Simple and Efficient Process",
       description:
         "Getting residency in Paraguay doesn't have to be expensive or complicated. We explain the process clearly, guide you every step of the way, and can offer support in English, Spanish, Portuguese, and more.",
       description2:
@@ -407,7 +407,7 @@
         {
           question: "Does Paraguay require proof of savings or income for residency?",
           answer:
-            "No. Paraguay does not impose any economic solvency requirement for granting residency. This applies equally to both temporary and permanent residency. No proof of income, savings, or minimum financial threshold is needed.",
+            "For temporary residency, Paraguay does not currently require proof of economic solvency, making the initial application accessible without income documentation or savings statements. Note that conversion to permanent residency may involve basic solvency requirements depending on the route chosen.",
         },
       ],
     },
@@ -460,10 +460,10 @@
         {
           title: "RUC Registration",
           description:
-            "We handle the complete process of obtaining your Registro Unico de Contribuyente (RUC), the tax identification number required for any fiscal activity in Paraguay. This includes document preparation, submission to the SET (tax authority), and activation of your tax profile.",
+            "We handle the complete process of obtaining your Registro Unico de Contribuyente (RUC), the tax identification number required for any fiscal activity in Paraguay. This includes document preparation, submission to the DNIT (tax authority), and activation of your tax profile.",
           features: [
             "Full application management",
-            "SET registration and activation",
+            "DNIT registration and activation",
             "Tax regime selection advice",
             "Digital certificate setup",
           ],
@@ -497,10 +497,10 @@
       subtitle:
         "One of the lowest tax burdens in the Americas, combined with a territorial tax system, makes Paraguay an ideal jurisdiction for individuals and businesses alike.",
       items: [
-        { value: "10%", label: "Corporate Income Tax", description: "Flat rate on net profits for most businesses" },
-        { value: "0%", label: "Tax on Foreign Income", description: "Territorial system: no tax on income earned abroad" },
-        { value: "10%", label: "Personal Income Tax", description: "Flat rate on local income for tax residents" },
-        { value: "0%", label: "Tax on Foreign Capital Gains", description: "No tax on capital gains realized outside Paraguay" },
+        { value: "10%", label: "Corporate Income Tax (IRE)", description: "General and SIMPLE regimes; RESIMPLE uses a quota system" },
+        { value: "Territorial", label: "Source-Based System", description: "Paraguay generally taxes Paraguayan-source income; foreign-source rules depend on case specifics" },
+        { value: "8–10%", label: "Personal Income Tax (IRP)", description: "8% on rents/capital gains, 8–10% on personal services depending on income level" },
+        { value: "8%", label: "Capital Gains (IRP)", description: "On Paraguayan-source assets; non-Paraguayan gains generally outside scope, subject to source rules" },
       ],
     },
     benefits: {
@@ -510,7 +510,7 @@
         "Dedicated bilingual accountant assigned to your case",
         "Timely filing of all tax declarations",
         "Direct communication with our team at any time",
-        "Full compliance with SET regulations and international standards",
+        "Full compliance with DNIT regulations and international standards",
         "Support for both individuals and corporate entities",
       ],
     },
@@ -539,9 +539,9 @@
       sectionTag: "Business Setup",
       title: "Your Business, Established the Right Way",
       description:
-        "Paraguay offers a welcoming environment for foreign entrepreneurs and investors. Low tax rates, a territorial tax system, and minimal bureaucracy make it one of the most attractive jurisdictions in South America for company formation.",
+        "Paraguay offers a welcoming environment for foreign entrepreneurs and investors. Competitive tax rates, a territorial tax system, and a growing economy make it one of the most attractive jurisdictions in South America for company formation.",
       description2:
-        "Our team manages the entire incorporation process from start to finish. We coordinate with legal professionals, the tax authority, notaries, and banks to ensure your company is set up correctly and ready to operate.",
+        "Our team manages the entire incorporation process from start to finish. We coordinate with legal professionals, the tax authority, notaries, and banks to ensure your company is set up correctly and ready to operate. Note: foreign nationals who are not residents generally need a local legal representative or power of attorney to act on their behalf during the incorporation process.",
     },
     whyUs: {
       title: "Why Work With Us",
@@ -579,12 +579,12 @@
         {
           title: "Incorporation & RUC",
           description:
-            "Our team coordinates the legal incorporation, registers your company with the SET (tax authority), and obtains your RUC (tax ID number).",
+            "Our team coordinates the legal incorporation, registers your company with the DNIT (tax authority), and obtains your RUC (tax ID number).",
         },
         {
           title: "Bank Account Opening",
           description:
-            "We assist with opening a corporate bank account at a reputable Paraguayan bank, handling all documentation and requirements on your behalf.",
+            "We assist with opening a corporate bank account at a reputable Paraguayan bank, handling all documentation and requirements on your behalf. Final approval depends on each bank's compliance and KYC review.",
         },
         {
           title: "Accounting & Compliance",
@@ -599,7 +599,7 @@
       items: [
         {
           name: "S.A. (Sociedad Anónima)",
-          description: "Similar to a corporation. Ideal for larger operations, multiple shareholders, or when seeking outside investment. Requires a minimum of 3 shareholders.",
+          description: "Similar to a corporation. Ideal for larger operations, multiple shareholders, or when seeking outside investment. Requires a minimum of 2 shareholders.",
           features: [
             "Limited liability for shareholders",
             "Shares can be freely transferred",
@@ -612,7 +612,7 @@
           description: "Similar to an LLC. Best suited for small to medium businesses with fewer partners. Simpler structure and lower maintenance requirements.",
           features: [
             "Limited liability for members",
-            "Minimum of 2 partners required",
+            "Minimum 2, maximum 25 partners",
             "Simpler governance structure",
             "Lower annual compliance costs",
           ],
@@ -816,7 +816,7 @@
       },
       {
         title: "Services Description",
-        content: "Paraguay Access provides advisory and facilitation services related to personal and tax residency in Paraguay, accounting and fiscal compliance, and company formation. Our role is to guide, advise, and coordinate with local professionals on your behalf. We are not a law firm and do not provide legal representation. Final decisions regarding immigration, tax, and corporate matters rest with the relevant Paraguayan authorities.",
+        content: "Paraguay Access provides advisory and facilitation services related to residency in Paraguay, accounting and fiscal compliance, and company formation. Our role is to guide, advise, and coordinate with local professionals on your behalf. We are not a law firm and do not provide legal representation. Final decisions regarding immigration, tax, and corporate matters rest with the relevant Paraguayan authorities.",
       },
       {
         title: "Client Responsibilities",

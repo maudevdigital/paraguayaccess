@@ -46,8 +46,8 @@ export default function Hero() {
 
   const stats = [
     { value: 750, suffix: "+", label: t.hero.stats.clients },
-    { value: 97, suffix: "%", label: t.hero.stats.satisfaction },
-    { value: 41, suffix: "+", label: t.hero.stats.countries },
+    { value: 98, suffix: "%", label: t.hero.stats.satisfaction },
+    { value: 40, suffix: "+", label: t.hero.stats.countries },
   ];
 
   return (

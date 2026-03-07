@@ -9,18 +9,18 @@ const pt: Dictionary = {
     blog: "Blog",
     getStarted: "Começar",
     residency: "Residência",
-    residencyDesc: "Residência pessoal e fiscal",
+    residencyDesc: "Autorizações de residência e suporte RUC",
     accountingTax: "Contabilidade e Impostos",
     accountingTaxDesc: "Gestão fiscal e conformidade tributária",
     companyFormation: "Constituição de Empresas",
     companyFormationDesc: "Abertura de empresas e serviços corporativos",
   },
   hero: {
-    badge: "Especialistas em Residência Fiscal",
-    title: "Seu Parceiro Especialista em Residência Fiscal no",
+    badge: "Especialistas em Residência e Conformidade Fiscal",
+    title: "Seu Parceiro Especialista em Residência, RUC e Conformidade Fiscal no",
     titleHighlight: "Paraguai",
     subtitle:
-      "Ajudamos pessoas e empresas a obter residência pessoal e fiscal no Paraguai. De autorizações a contabilidade e conformidade, nossa equipe garante que você esteja alinhado com as leis fiscais nacionais e internacionais.",
+      "Ajudamos pessoas e empresas a obter residência no Paraguai e cumprir com suas obrigações fiscais locais. De autorizações e registro de RUC a contabilidade e conformidade, nossa equipe orienta você em cada etapa.",
     cta: "Entre em Contato",
     ctaSecondary: "Conheça Nossos Serviços",
     stats: {
@@ -41,7 +41,7 @@ const pt: Dictionary = {
       description:
         "Gerenciamos todo o processo de residência , da estratégia inicial à obtenção das suas autorizações temporárias e permanentes, com suporte jurídico dedicado em cada etapa.",
       features: [
-        "Residência Pessoal e Fiscal",
+        "Autorizações de Residência e Suporte RUC",
         "Autorizações Temporárias e Permanentes",
         "Apostila e Legalização de Documentos",
         "Conformidade Migratória Completa",
@@ -76,7 +76,7 @@ const pt: Dictionary = {
     title: "Por Que Escolher a",
     titleHighlight: "Paraguay Access?",
     description:
-      "Somos uma firma especializada focada em ajudar pessoas e empresas com residência pessoal e fiscal no Paraguai. Também oferecemos serviços de contabilidade, planejamento fiscal e domicílio para garantir que sua situação esteja sempre em conformidade com as leis fiscais nacionais e internacionais.",
+      "Somos uma firma especializada focada em ajudar pessoas e empresas a obter residência no Paraguai. Também oferecemos serviços de contabilidade, planejamento fiscal e domicílio para garantir que sua situação esteja sempre em conformidade com as leis fiscais nacionais e internacionais.",
     description2:
       "Nossa equipe combina expertise local com perspectiva internacional. Entendemos as complexidades da tributação transfronteiriça e da relocação, entregando estratégias personalizadas projetadas para suas necessidades específicas.",
     values: {
@@ -105,29 +105,29 @@ const pt: Dictionary = {
   whyParaguay: {
     sectionTag: "Por Que Paraguai?",
     title: "Seu Destino Ideal para",
-    titleHighlight: "Residência Fiscal",
+    titleHighlight: "Residência e Negócios",
     subtitle:
-      "O Paraguai oferece benefícios incomparáveis para residentes fiscais , um sistema tributário territorial, processo de residência rápido e um ambiente favorável a negócios que atrai empreendedores do mundo todo.",
+      "O Paraguai oferece vantagens convincentes para residentes: um sistema tributário territorial, um processo de residência ágil e um ambiente favorável a negócios que atrai empreendedores do mundo todo.",
     reasons: [
       {
-        title: "0% de Imposto sobre Renda do Exterior",
+        title: "Sistema Fiscal Territorial",
         description:
-          "O sistema fiscal territorial do Paraguai significa zero impostos sobre renda gerada fora do país , ideal para empreendedores internacionais e profissionais remotos.",
+          "O Paraguai geralmente tributa a renda de fonte paraguaia. Como regra geral, a renda de atividades realizadas fora do Paraguai está fora do escopo do imposto de renda; no entanto, as regras de fonte dependem de onde a atividade é realizada e se os bens ou direitos estão localizados ou economicamente utilizados no Paraguai.",
       },
       {
-        title: "Sem Presença Mínima Exigida",
+        title: "Regras Flexíveis de Presença",
         description:
-          "Diferente de muitos países, o Paraguai não exige um número mínimo de dias no país para manter seu status de residência fiscal.",
+          "O Paraguai não utiliza um teste padrão de dias anuais como muitos países, mas a residência migratória pode ser perdida após ausências injustificadas (12 meses para temporários, 36 para permanentes) conforme a lei vigente. A residência fiscal é um conceito separado vinculado a critérios da DNIT.",
       },
       {
-        title: "Sem Imposto sobre Ganhos de Capital",
+        title: "Regras Territoriais de Ganhos de Capital",
         description:
-          "Desfrute de zero impostos sobre ganhos de capital em ativos não paraguaios, tornando-o um destino privilegiado para investidores e gestores de portfólio.",
+          "Ganhos de capital sobre ativos de fonte paraguaia são geralmente tributados a 8% para pessoas físicas. Ganhos sobre ativos não paraguaios estão geralmente fora do escopo fiscal paraguaio, sujeitos a regras de fonte e análise caso a caso.",
       },
       {
-        title: "Processo de Residência Rápido",
+        title: "Processo de Residência Ágil",
         description:
-          "Obtenha sua residência temporária em poucas semanas, com um caminho claro e direto para residência permanente e cidadania.",
+          "Inicie sua solicitação de residência em uma única viagem curta, com documentos processados tipicamente entre 35 e 105 dias dependendo da carga de trabalho das autoridades. Os prazos são estimados e estão sujeitos a alterações.",
       },
       {
         title: "Baixo Custo de Vida",
@@ -199,10 +199,10 @@ const pt: Dictionary = {
     ],
   },
   cta: {
-    title: "Pronto para Garantir Sua",
-    titleHighlight: "Residência Fiscal no Paraguai?",
+    title: "Pronto para Iniciar Seu",
+    titleHighlight: "Processo de Residência no Paraguai?",
     subtitle:
-      "Agende uma consulta gratuita com nossa equipe e descubra como podemos ajudá-lo com residência, otimização fiscal e conformidade total.",
+      "Agende uma consulta gratuita com nossa equipe e descubra como podemos ajudá-lo com residência, conformidade fiscal e constituição de empresas.",
     button: "Agendar Consulta Gratuita",
     buttonSecondary: "Contate-nos",
   },
@@ -216,7 +216,7 @@ const pt: Dictionary = {
         "Residência Temporária ou Permanente Imediata",
         "Sem pagamento antecipado",
         "Assistência antes, durante e depois do processo",
-        "Residência Fiscal incluída",
+        "Registro de RUC e integração fiscal incluídos",
       ],
       cta: "Entre em Contato",
     },
@@ -236,7 +236,7 @@ const pt: Dictionary = {
         {
           title: "Residência",
           description:
-            "Após enviar sua solicitação, você receberá sua Residência Temporária em poucas semanas.",
+            "Após enviar sua solicitação, sua Residência Temporária é processada tipicamente entre 35 e 105 dias, dependendo do método escolhido.",
         },
         {
           title: "Cédula",
@@ -277,16 +277,16 @@ const pt: Dictionary = {
       },
       permanent: {
         name: "Residência Permanente Imediata",
-        tag: "Pacote Completo · Requer Investimento de 10.000 USD",
+        tag: "Pacote Completo · Residência Permanente Direta para Investidores SUACE Qualificados",
         price: "29,750,000",
         features: [
-          "Residência permanente imediata",
+          "Residência permanente direta pela via investidor SUACE",
           "Tudo incluído no pacote Temporário",
           "1 viagem curta de ~10 dias úteis",
           "Plano de negócios obrigatório completo",
-          "Processamento de visto de investidor SUACE",
+          "Processamento de constância de investidor SUACE",
           "Constituição de empresa incluída",
-          "Cartão de residência e cédula acelerados",
+          "Processamento acelerado de cartão de residência e cédula",
           "Orientação em investimento imobiliário",
           "Serviço de concierge completo",
         ],
@@ -302,14 +302,14 @@ const pt: Dictionary = {
       title: "Programa de residência no Paraguai: como funciona em 2026",
       date: "Atualizado: março 2026",
       intro1: "O Paraguai se destaca como um dos países mais fáceis e convenientes para obter uma segunda residência. Além disso, seu sistema fiscal favorável o torna um destino popular para aqueles que buscam uma residência secundária, não apenas para si mesmos, mas também para seus negócios. As leis que regulam o processo de residência no Paraguai passaram por mudanças significativas, especialmente em 2020 e novamente em 2022, introduzindo diversas atualizações quanto aos pré-requisitos e etapas para obter a residência.",
-      intro2: "Ao longo dos anos, nossa equipe ajudou mais de 500 pessoas de todo o mundo a aproveitar o programa de residência do Paraguai. Neste guia, revisaremos todas as opções disponíveis e seus requisitos. Se você procura uma consulta personalizada, lembramos que é possível entrar em contato conosco e receber assistência especializada.",
+      intro2: "Ao longo dos anos, nossa equipe ajudou mais de 750 pessoas de todo o mundo a aproveitar o programa de residência do Paraguai. Neste guia, revisaremos todas as opções disponíveis e seus requisitos. Se você procura uma consulta personalizada, lembramos que é possível entrar em contato conosco e receber assistência especializada.",
       sections: {
         tempAndPerm: {
           title: "Residência temporária e permanente",
           intro: "A primeira coisa que você deve saber sobre o programa de residência do Paraguai é que existem duas opções principais:",
           tempOption: "A residência temporária é válida por 2 anos, com possibilidade de renovação e conversão para residência permanente.",
           permOption: "A residência permanente concede residência por tempo indeterminado no país e requer renovação a cada 10 anos.",
-          outro: "Os direitos obtidos com ambas as opções são exatamente os mesmos. As únicas diferenças entre os dois tipos de residência são seus períodos de validade e requisitos. Atualmente, a rota mais simples e econômica é obter primeiro a residência temporária e depois convertê-la em permanente.",
+          outro: "Ambos os status permitem residência legal no Paraguai, mas não são idênticos para todo propósito legal e fiscal. A residência temporária geralmente é o primeiro passo; a residência permanente pode ser relevante para considerações fiscais adicionais e de status a longo prazo. Atualmente, a rota mais simples e econômica é obter primeiro a residência temporária e depois convertê-la em permanente.",
         },
         temporary: {
           title: "Residência temporária",
@@ -320,19 +320,19 @@ const pt: Dictionary = {
           step3: "Após o carnet de radicação temporária, pode-se ir ao Departamento de Identificação da Polícia Paraguaia para obter a cédula de identidade. A partir de setembro de 2024, tornou-se estritamente necessário solicitar o novo formato da cédula, que incorpora o microchip e só pode ser obtido através de impressões digitais eletrônicas e assinatura digital.",
           note1: "Se você solicitar a residência por conta própria, precisará solicitar a cédula somente após o cartão de residência ter sido processado. Se solicitar com a ajuda de uma firma de imigração especializada, poderá solicitar a cédula antes da impressão do cartão de residência. A cédula ficará pronta somente após o cartão de residência, mas com essa oportunidade você pode solicitar ambos os documentos em uma única viagem curta.",
           note2: "Se desejar solicitar a cédula após a impressão do cartão de residência, precisará permanecer no Paraguai durante a espera ou programar uma segunda viagem. Se solicitar a cédula antes da impressão do cartão de residência, poderá permanecer no Paraguai por apenas 3-4 dias úteis e concluir a solicitação de ambos os documentos.",
-          benefits: "Neste ponto, todos os benefícios de uma residência são concedidos. É possível obter carteira de motorista, abrir conta bancária, estabelecer um negócio, comprar propriedade e, dependendo de circunstâncias específicas, estar sujeito aos impostos paraguaios.",
+          benefits: "Neste ponto, você pode acessar diversos benefícios como solicitar carteira de motorista, estabelecer um negócio ou comprar propriedade. A abertura de conta bancária é facilitada mas sempre depende da revisão KYC de cada banco. Dependendo das suas circunstâncias específicas, você também pode ficar sujeito aos impostos paraguaios.",
         },
         permanent: {
           title: "Residência permanente",
           intro: "A residência permanente concede o direito de residir indefinidamente no Paraguai, com a disposição de renová-la a cada 10 anos.",
           routesIntro: "Existem duas vias para obter a residência permanente:",
           route1: "O método mais simples é obter primeiro a residência temporária e depois convertê-la em permanente. É permitido trocar a residência temporária por permanente após 21 meses. Neste caso, será necessário apresentar uma prova muito básica de solvência.",
-          route2: "Alternativamente, é possível obter diretamente a residência permanente por investimento. Isso requer o compromisso de investir pelo menos US$ 70.000 no país, apresentando um plano de negócios detalhado mostrando como o dinheiro será investido. Basta mostrar uma conta bancária com mais de US$ 70.000 em fundos, e o solicitante tem 6 meses para executar o plano de negócios.",
+          route2: "Alternativamente, é possível obter diretamente a residência permanente pela via de investidor SUACE. Sob os critérios públicos atuais do SUACE, isso requer um projeto qualificado, suporte documental de capacidade econômica, um investimento mínimo planejado de USD 70.000, pelo menos 5 contratações diretas e execução em um prazo de até 24 meses.",
           investBenefitsIntro: "Alguns dos benefícios de obter a residência permanente por investimento incluem:",
           investBenefits: [
-            "Melhores oportunidades para abrir conta bancária no Paraguai",
-            "Processamento mais rápido do cartão de residência e da cédula, que em média ficam prontos em 30 dias",
-            "Rota mais rápida para a cidadania no Paraguai, após 3 anos de residência permanente",
+            "Assistimos com a abertura de conta bancária, mas a aprovação final depende da revisão de conformidade e KYC de cada banco",
+            "Processamento tipicamente mais rápido do cartão de residência e da cédula (prazos variam conforme a carga de trabalho das autoridades)",
+            "A residência permanente pode apoiar a posterior elegibilidade para solicitar naturalização, sujeita a requisitos constitucionais e judiciais (incluindo mínimo de 3 anos de residência permanente, entre outros critérios)",
           ],
         },
         stayRequirements: {
@@ -347,24 +347,24 @@ const pt: Dictionary = {
           title: "Quais são os benefícios do programa de residência do Paraguai?",
           intro: "O Paraguai oferece um conjunto único de vantagens, especialmente para aqueles que buscam um sistema fiscal atraente e uma economia em rápido crescimento. Entre as razões que levam milhares a transferir sua residência para cá a cada ano estão:",
           items: [
-            "Uma alíquota de imposto corporativo de 10% sobre lucros líquidos ou 3% sobre receita no regime de pequenas empresas.",
-            "A isenção de impostos estrangeiros garante a não tributação sobre rendas geradas no exterior por empresas ou indivíduos.",
-            "Uma alíquota de imposto sobre ganhos de capital de apenas 8%, que não se aplica a ganhos obtidos com criptomoedas ou ganhos de capital realizados no exterior.",
-            "Sigilo bancário.",
-            "Não é necessário permanecer fisicamente no país para manter a residência.",
+            "A tributação corporativa depende do regime aplicável. IRE Geral e SIMPLE são geralmente 10% sobre lucros líquidos; RESIMPLE segue um sistema simplificado de cotas baseado em faixas de receita.",
+            "Sob o sistema fiscal territorial, a renda gerada no exterior por empresas ou indivíduos está geralmente fora do escopo do imposto de renda paraguaio, sujeita às regras de fonte aplicáveis.",
+            "Ganhos de capital sobre ativos de fonte paraguaia são geralmente tributados a 8% para pessoas físicas. Ganhos sobre ativos não paraguaios estão geralmente fora do escopo fiscal. O tratamento fiscal de criptoativos deve ser analisado caso a caso conforme o contribuinte, a operação e as regras de fonte paraguaia aplicáveis.",
+            "Proteções de sigilo bancário sob a regulamentação vigente.",
+            "O Paraguai não utiliza um teste padrão de dias anuais, mas a residência migratória pode ser perdida após ausências injustificadas (12 meses para temporários, 36 para permanentes). A residência fiscal é um conceito separado.",
             "As leis são especialmente favoráveis para empreendedores e investidores, ainda mais para aqueles que trazem capital estrangeiro.",
             "A nação não está na lista negra e permite a movimentação irrestrita de capitais.",
             "Os critérios e custos para obter e manter a residência estão entre os mais competitivos do mundo.",
             "O Guarani é a moeda mais antiga da América Latina, mantendo uma taxa de inflação média de menos de 3% nos últimos 50 anos.",
             "Para aqueles que consideram abrir um negócio de manufatura, os baixos custos de mão de obra e energia do Paraguai o tornam uma proposta atraente.",
           ],
-          nomadNote: "Este programa é especialmente atraente para nômades digitais. É completamente viável e legal transferir a residência para o Paraguai, viajar pelo mundo durante todo o ano e ainda manter a residência formal no país. Dessa forma, fica-se sujeito aos modestos impostos do Paraguai e, se desejar, pode-se receber legitimamente rendas em contas em dólares ou em bancos localizados em outros lugares. Se você tem curiosidade sobre como poderia se beneficiar especificamente da obtenção da residência no Paraguai, não hesite em entrar em contato.",
+          nomadNote: "Este programa é frequentemente considerado por nômades digitais. É viável e legal obter residência no Paraguai, embora mantê-la exija conformidade com as regras de ausência da lei migratória. As obrigações fiscais dependem das circunstâncias individuais e das regras de fonte aplicáveis. Se você tem curiosidade sobre como a obtenção de residência no Paraguai poderia funcionar para sua situação específica, não hesite em entrar em contato.",
         },
       },
       cta: "Entre em contato",
     },
     info: {
-      title: "Residência no Paraguai em Questão de Semanas",
+      title: "Residência no Paraguai: Um Processo Simples e Eficiente",
       description:
         "Obter residência no Paraguai não precisa ser caro nem complicado. Explicamos o processo com clareza, orientamos você em cada etapa e oferecemos suporte em português, inglês, espanhol e mais.",
       description2:
@@ -409,14 +409,14 @@ const pt: Dictionary = {
         {
           question: "O Paraguai exige comprovação de renda ou poupança para conceder residência?",
           answer:
-            "Não. O Paraguai não impõe nenhum requisito de solvência econômica para concessão de residência. Isso se aplica igualmente à residência temporária e permanente. Não é necessário comprovar renda, poupança ou qualquer patamar financeiro mínimo.",
+            "Para a residência temporária, o Paraguai atualmente não exige comprovação de solvência econômica, tornando a solicitação inicial acessível sem documentação de renda ou extratos de poupança. A conversão para residência permanente pode envolver requisitos básicos de solvência dependendo da via escolhida.",
         },
       ],
     },
   },
   footer: {
     description:
-      "Firma especializada em residência pessoal e fiscal, contabilidade, planejamento fiscal e serviços de conformidade para pessoas e empresas no Paraguai.",
+      "Firma especializada em residência, contabilidade, planejamento fiscal e serviços de conformidade para pessoas e empresas no Paraguai.",
     services: "Serviços",
     company: "Empresa",
     contact: "Contato",
@@ -462,10 +462,10 @@ const pt: Dictionary = {
         {
           title: "Registro do RUC",
           description:
-            "Gerenciamos todo o processo de obtenção do seu Registro Único de Contribuyente (RUC), o número de identificação fiscal necessário para qualquer atividade tributária no Paraguai. Isso inclui preparação de documentos, envio à SET (autoridade fiscal) e ativação do seu perfil fiscal.",
+            "Gerenciamos todo o processo de obtenção do seu Registro Único de Contribuyente (RUC), o número de identificação fiscal necessário para qualquer atividade tributária no Paraguai. Isso inclui preparação de documentos, envio à DNIT (autoridade fiscal) e ativação do seu perfil fiscal.",
           features: [
             "Gestão completa do processo",
-            "Registro e ativação na SET",
+            "Registro e ativação na DNIT",
             "Orientação na escolha do regime fiscal",
             "Configuração do certificado digital",
           ],
@@ -499,10 +499,10 @@ const pt: Dictionary = {
       subtitle:
         "Uma das menores cargas tributárias das Américas, combinada com um sistema fiscal territorial, torna o Paraguai uma jurisdição ideal tanto para pessoas físicas quanto para empresas.",
       items: [
-        { value: "10%", label: "Imposto de Renda Corporativo", description: "Taxa fixa sobre lucros líquidos para a maioria das empresas" },
-        { value: "0%", label: "Imposto sobre Renda do Exterior", description: "Sistema territorial: sem impostos sobre renda gerada no exterior" },
-        { value: "10%", label: "Imposto de Renda Pessoal", description: "Taxa fixa sobre renda local para residentes fiscais" },
-        { value: "0%", label: "Imposto sobre Ganhos de Capital do Exterior", description: "Sem impostos sobre ganhos de capital obtidos fora do Paraguai" },
+        { value: "10%", label: "Imposto de Renda Corporativo (IRE)", description: "Regimes Geral e SIMPLE; RESIMPLE usa sistema de cotas" },
+        { value: "Territorial", label: "Sistema Baseado em Fonte", description: "O Paraguai geralmente tributa renda de fonte paraguaia; regras de fonte estrangeira dependem do caso" },
+        { value: "8–10%", label: "Imposto de Renda Pessoal (IRP)", description: "8% sobre rendas/ganhos de capital, 8–10% sobre serviços pessoais conforme nível de renda" },
+        { value: "8%", label: "Ganhos de Capital (IRP)", description: "Sobre ativos de fonte paraguaia; ganhos não paraguaios geralmente fora do escopo, sujeitos a regras de fonte" },
       ],
     },
     benefits: {
@@ -512,7 +512,7 @@ const pt: Dictionary = {
         "Contador bilíngue dedicado atribuído ao seu caso",
         "Envio pontual de todas as declarações fiscais",
         "Comunicação direta com nossa equipe a qualquer momento",
-        "Total conformidade com as regulamentações da SET e padrões internacionais",
+        "Total conformidade com as regulamentações da DNIT e padrões internacionais",
         "Suporte tanto para pessoas físicas quanto para entidades corporativas",
       ],
     },
@@ -541,9 +541,9 @@ const pt: Dictionary = {
       sectionTag: "Abertura de Empresas",
       title: "Seu Negócio, Estabelecido da Forma Correta",
       description:
-        "O Paraguai oferece um ambiente acolhedor para empreendedores e investidores estrangeiros. Taxas de impostos baixas, um sistema fiscal territorial e burocracia mínima o tornam uma das jurisdições mais atrativas da América do Sul para constituição de empresas.",
+        "O Paraguai oferece um ambiente acolhedor para empreendedores e investidores estrangeiros. Taxas de impostos competitivas, um sistema fiscal territorial e uma economia em crescimento o tornam uma das jurisdições mais atrativas da América do Sul para constituição de empresas.",
       description2:
-        "Nossa equipe gerencia todo o processo de constituição do início ao fim. Coordenamos com profissionais jurídicos, a autoridade fiscal, cartórios e bancos para garantir que sua empresa seja constituída corretamente e esteja pronta para operar.",
+        "Nossa equipe gerencia todo o processo de constituição do início ao fim. Coordenamos com profissionais jurídicos, a autoridade fiscal, cartórios e bancos para garantir que sua empresa seja constituída corretamente e esteja pronta para operar. Nota: cidadãos estrangeiros que não são residentes geralmente precisam de um representante legal local ou procuração para atuar em seu nome durante o processo de constituição.",
     },
     whyUs: {
       title: "Por Que Trabalhar Conosco",
@@ -581,12 +581,12 @@ const pt: Dictionary = {
         {
           title: "Constituição e RUC",
           description:
-            "Nossa equipe coordena a constituição legal, registra sua empresa na SET (autoridade fiscal) e obtém seu RUC (número de identificação fiscal).",
+            "Nossa equipe coordena a constituição legal, registra sua empresa na DNIT (autoridade fiscal) e obtém seu RUC (número de identificação fiscal).",
         },
         {
           title: "Abertura de Conta Bancária",
           description:
-            "Assistimos na abertura de uma conta bancária corporativa em um banco paraguaio de prestígio, cuidando de toda a documentação e requisitos em seu nome.",
+            "Assistimos na abertura de uma conta bancária corporativa em um banco paraguaio de prestígio, cuidando de toda a documentação e requisitos em seu nome. A aprovação final depende da revisão de conformidade e KYC de cada banco.",
         },
         {
           title: "Contabilidade e Conformidade",
@@ -601,7 +601,7 @@ const pt: Dictionary = {
       items: [
         {
           name: "S.A. (Sociedad Anónima)",
-          description: "Similar a uma corporação. Ideal para operações maiores, múltiplos acionistas ou quando se busca investimento externo. Requer no mínimo 3 acionistas.",
+          description: "Similar a uma corporação. Ideal para operações maiores, múltiplos acionistas ou quando se busca investimento externo. Requer no mínimo 2 acionistas.",
           features: [
             "Responsabilidade limitada para os acionistas",
             "Ações podem ser livremente transferidas",
@@ -614,7 +614,7 @@ const pt: Dictionary = {
           description: "Similar a uma LLC. Mais adequada para pequenas e médias empresas com menos sócios. Estrutura mais simples e menores requisitos de manutenção.",
           features: [
             "Responsabilidade limitada para os sócios",
-            "Mínimo de 2 sócios obrigatório",
+            "Mínimo 2, máximo 25 sócios",
             "Estrutura de governança mais simples",
             "Menores custos de conformidade anual",
           ],
@@ -818,7 +818,7 @@ const pt: Dictionary = {
       },
       {
         title: "Descrição dos Serviços",
-        content: "O Paraguay Access presta serviços de assessoria e facilitação relacionados à residência pessoal e fiscal no Paraguai, contabilidade e conformidade fiscal, e constituição de empresas. Nosso papel é orientar, assessorar e coordenar com profissionais locais em seu nome. Não somos um escritório de advocacia e não fornecemos representação legal. As decisões finais sobre questões migratórias, fiscais e societárias cabem às autoridades paraguaias competentes.",
+        content: "O Paraguay Access presta serviços de assessoria e facilitação relacionados à residência no Paraguai, contabilidade e conformidade fiscal, e constituição de empresas. Nosso papel é orientar, assessorar e coordenar com profissionais locais em seu nome. Não somos um escritório de advocacia e não fornecemos representação legal. As decisões finais sobre questões migratórias, fiscais e societárias cabem às autoridades paraguaias competentes.",
       },
       {
         title: "Responsabilidades do Cliente",
