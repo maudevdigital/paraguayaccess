@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -15,10 +16,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/images/favicon.png", type: "image/png", sizes: "32x32" },
+      { url: "/images/logo-blue.png", type: "image/png", sizes: "any" },
     ],
-    apple: "/images/favicon.png",
+    apple: "/images/logo-blue.png",
   },
   other: {
     "apple-mobile-web-app-capable": "yes",
@@ -43,6 +43,7 @@ export default function RootLayout({
     <html className="scroll-smooth">
       <body className={`${montserrat.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );

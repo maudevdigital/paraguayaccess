@@ -38,8 +38,10 @@ export async function generateMetadata({
       title: seo.title,
       description: seo.description,
       url: `${SITE_URL}/${locale}/accounting`,
+      siteName: "Paraguay Access",
       locale: ogLocaleMap[locale],
       alternateLocale: locales.filter((l) => l !== locale).map((l) => ogLocaleMap[l]),
+      images: [{ url: "/images/logo-blue.png", width: 512, height: 512, alt: "Paraguay Access" }],
     },
     alternates: {
       canonical: `${SITE_URL}/${locale}/accounting`,
@@ -49,12 +51,30 @@ export async function generateMetadata({
 }
 
 function AccountingJsonLd({ locale }: { locale: Locale }) {
+  const seo = seoData[locale].accounting;
   const data = {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/${locale}` },
-      { "@type": "ListItem", position: 2, name: "Accounting & Tax", item: `${SITE_URL}/${locale}/accounting` },
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/${locale}` },
+          { "@type": "ListItem", position: 2, name: "Accounting & Tax", item: `${SITE_URL}/${locale}/accounting` },
+        ],
+      },
+      {
+        "@type": "Service",
+        name: seo.title,
+        description: seo.description,
+        provider: {
+          "@type": "Organization",
+          name: "Paraguay Access",
+          url: SITE_URL,
+        },
+        areaServed: { "@type": "Country", name: "Paraguay" },
+        serviceType: "Accounting & Tax Advisory Services",
+        url: `${SITE_URL}/${locale}/accounting`,
+      },
     ],
   };
   return (

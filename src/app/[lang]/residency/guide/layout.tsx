@@ -36,8 +36,10 @@ export async function generateMetadata({
       description: seo.description,
       url: `${SITE_URL}/${locale}/residency/guide`,
       type: "article",
+      siteName: "Paraguay Access",
       locale: ogLocaleMap[locale],
       alternateLocale: locales.filter((l) => l !== locale).map((l) => ogLocaleMap[l]),
+      images: [{ url: "/images/logo-blue.png", width: 512, height: 512, alt: "Paraguay Access" }],
     },
     alternates: {
       canonical: `${SITE_URL}/${locale}/residency/guide`,
@@ -68,7 +70,7 @@ function GuideJsonLd({ locale }: { locale: Locale }) {
         publisher: {
           "@type": "Organization",
           name: "Paraguay Access",
-          logo: { "@type": "ImageObject", url: `${SITE_URL}/images/logo.png` },
+          logo: { "@type": "ImageObject", url: `${SITE_URL}/images/logo-blue.png` },
         },
         mainEntityOfPage: `${SITE_URL}/${locale}/residency/guide`,
         inLanguage: locale,

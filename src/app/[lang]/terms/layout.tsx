@@ -22,11 +22,23 @@ export async function generateMetadata({
   return {
     title: { absolute: seo.title },
     description: seo.description,
+    keywords: [
+      "Paraguay Access terms of service", "terms and conditions",
+      "términos de servicio Paraguay Access", "condiciones de uso",
+      "termos de serviço Paraguay Access",
+      "conditions d'utilisation Paraguay Access",
+      "termini di servizio Paraguay Access",
+      "условия использования Paraguay Access",
+      "όροι χρήσης Paraguay Access",
+    ],
     openGraph: {
       title: seo.title,
       description: seo.description,
       url: `${SITE_URL}/${locale}/terms`,
+      siteName: "Paraguay Access",
       locale: ogLocaleMap[locale],
+      alternateLocale: locales.filter((l) => l !== locale).map((l) => ogLocaleMap[l]),
+      images: [{ url: "/images/logo-blue.png", width: 512, height: 512, alt: "Paraguay Access" }],
     },
     alternates: {
       canonical: `${SITE_URL}/${locale}/terms`,
@@ -35,6 +47,36 @@ export async function generateMetadata({
   };
 }
 
-export default function TermsLayout({ children }: { children: React.ReactNode }) {
-  return children;
+function TermsJsonLd({ locale }: { locale: Locale }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/${locale}` },
+      { "@type": "ListItem", position: 2, name: "Terms of Service", item: `${SITE_URL}/${locale}/terms` },
+    ],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export default async function TermsLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isValidLocale(lang) ? lang : "en";
+  return (
+    <>
+      <TermsJsonLd locale={locale} />
+      {children}
+    </>
+  );
 }

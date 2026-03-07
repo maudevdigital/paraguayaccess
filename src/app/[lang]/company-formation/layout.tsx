@@ -38,8 +38,10 @@ export async function generateMetadata({
       title: seo.title,
       description: seo.description,
       url: `${SITE_URL}/${locale}/company-formation`,
+      siteName: "Paraguay Access",
       locale: ogLocaleMap[locale],
       alternateLocale: locales.filter((l) => l !== locale).map((l) => ogLocaleMap[l]),
+      images: [{ url: "/images/logo-blue.png", width: 512, height: 512, alt: "Paraguay Access" }],
     },
     alternates: {
       canonical: `${SITE_URL}/${locale}/company-formation`,
@@ -49,12 +51,30 @@ export async function generateMetadata({
 }
 
 function CompanyJsonLd({ locale }: { locale: Locale }) {
+  const seo = seoData[locale].companyFormation;
   const data = {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/${locale}` },
-      { "@type": "ListItem", position: 2, name: "Company Formation", item: `${SITE_URL}/${locale}/company-formation` },
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/${locale}` },
+          { "@type": "ListItem", position: 2, name: "Company Formation", item: `${SITE_URL}/${locale}/company-formation` },
+        ],
+      },
+      {
+        "@type": "Service",
+        name: seo.title,
+        description: seo.description,
+        provider: {
+          "@type": "Organization",
+          name: "Paraguay Access",
+          url: SITE_URL,
+        },
+        areaServed: { "@type": "Country", name: "Paraguay" },
+        serviceType: "Company Formation & Business Registration",
+        url: `${SITE_URL}/${locale}/company-formation`,
+      },
     ],
   };
   return (

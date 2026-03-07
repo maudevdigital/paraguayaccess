@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { useLanguage, locales, languageNames, type Locale } from "@/lib/i18n/LanguageContext";
 import FlagIcon from "@/components/FlagIcon";
 
@@ -93,10 +94,12 @@ export default function Header() {
           <div className="flex h-20 sm:h-24 lg:h-28 items-center justify-between overflow-visible">
             {/* Logo */}
             <a href={lp("/")} className="flex items-center shrink-0 -ml-4 overflow-visible">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/images/logo-blue.png"
                 alt="Paraguay Access"
+                width={500}
+                height={200}
+                priority
                 className="h-40 sm:h-44 lg:h-48 w-auto -my-16 sm:-my-18 lg:-my-20"
               />
             </a>

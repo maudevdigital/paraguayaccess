@@ -35,8 +35,10 @@ export async function generateMetadata({
       title: seo.title,
       description: seo.description,
       url: `${SITE_URL}/${locale}/contact`,
+      siteName: "Paraguay Access",
       locale: ogLocaleMap[locale],
       alternateLocale: locales.filter((l) => l !== locale).map((l) => ogLocaleMap[l]),
+      images: [{ url: "/images/logo-blue.png", width: 512, height: 512, alt: "Paraguay Access" }],
     },
     alternates: {
       canonical: `${SITE_URL}/${locale}/contact`,

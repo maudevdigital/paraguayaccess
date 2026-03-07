@@ -67,18 +67,18 @@ export async function generateMetadata({
         .map((l) => ogLocaleMap[l]),
       images: [
         {
-          url: "/images/og-image.png",
-          width: 1200,
-          height: 630,
+          url: "/images/logo-blue.png",
+          width: 512,
+          height: 512,
           alt: "Paraguay Access - Residency & Tax Advisory Services in Paraguay",
         },
       ],
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary",
       title: seo.title,
       description: seo.description,
-      images: ["/images/og-image.png"],
+      images: ["/images/logo-blue.png"],
     },
     alternates: {
       canonical: `${SITE_URL}/${locale}`,
@@ -105,7 +105,7 @@ function JsonLd({ locale }: { locale: Locale }) {
         url: SITE_URL,
         logo: {
           "@type": "ImageObject",
-          url: `${SITE_URL}/images/logo.png`,
+          url: `${SITE_URL}/images/logo-blue.png`,
           width: 512,
           height: 512,
         },
@@ -141,7 +141,7 @@ function JsonLd({ locale }: { locale: Locale }) {
         "@id": `${SITE_URL}/#service`,
         name: "Paraguay Access",
         url: SITE_URL,
-        image: `${SITE_URL}/images/logo.png`,
+        image: `${SITE_URL}/images/logo-blue.png`,
         description: seo.description,
         priceRange: "$$",
         address: {
@@ -232,6 +232,52 @@ function JsonLd({ locale }: { locale: Locale }) {
             position: 1,
             name: "Home",
             item: `${SITE_URL}/${locale}`,
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${SITE_URL}/${locale}#faq`,
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "How long does it take to get residency in Paraguay?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The temporary residency process in Paraguay typically takes 4-8 weeks from start to finish. Permanent residency through investment can be obtained in a similar timeframe.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do I need to live in Paraguay to maintain residency?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "No. Paraguay has no minimum stay requirement for maintaining residency. You only need to visit the country at least once every 3 years to keep your residency active.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is Paraguay's tax system for residents?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Paraguay uses a territorial tax system, meaning only income generated within Paraguay is taxed. Foreign-sourced income is taxed at 0%. The corporate tax rate is a flat 10%.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What documents do I need for Paraguay residency?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "You need a valid passport, birth certificate, police clearance from your home country (all apostilled), and proof of income or financial solvency. Paraguay Access handles all translations and local paperwork.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can I open a company in Paraguay as a foreigner?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Foreigners can fully own and operate businesses in Paraguay. Common structures include S.A. (corporation) and S.R.L. (limited liability). Paraguay Access manages the entire incorporation process.",
+            },
           },
         ],
       },
