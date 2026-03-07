@@ -55,13 +55,13 @@ export default function Hero() {
       {/* Parallax background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
-        style={{ backgroundImage: "url('/images/paraguay-flag.jpg')" }}
+        style={{ backgroundImage: "url('/images/paraguay-flag.webp')" }}
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/55 to-black/65" />
 
       {/* Main content */}
-      <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 sm:pt-36 sm:pb-24 lg:pt-40 lg:pb-28">
+      <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-36 pb-20 sm:pt-40 sm:pb-24 lg:pt-44 lg:pb-28">
         {/* Text - centered */}
         <div className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-1.5 mb-6 border border-white/10">

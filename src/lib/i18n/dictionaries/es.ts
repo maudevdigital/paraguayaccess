@@ -634,7 +634,7 @@ const es: Dictionary = {
     hero: {
       title: "Hablemos Sobre tu Futuro en Paraguay",
       subtitle:
-        "Ya sea que estés considerando la residencia, necesites asesoría fiscal o quieras abrir una empresa — estamos aquí para ayudarte. A continuación encontrarás cómo contactarnos y qué esperar.",
+        "Ya sea que estés considerando la residencia, necesites asesoría fiscal o quieras abrir una empresa, estamos aquí para ayudarte. A continuación encontrarás cómo contactarnos y qué esperar.",
     },
     process: {
       sectionTag: "Cómo Funciona",
@@ -642,19 +642,19 @@ const es: Dictionary = {
       subtitle: "Solicitar información o iniciar un servicio con nosotros es muy sencillo. Así funciona:",
       steps: [
         {
-          title: "1. Escríbenos",
+          title: "Escríbenos",
           description: "Envíanos un correo o un mensaje de WhatsApp describiendo brevemente tu situación: tu nacionalidad, tus objetivos (residencia, planificación fiscal, apertura de empresa) y cualquier pregunta que tengas.",
         },
         {
-          title: "2. Consulta Inicial Gratuita",
+          title: "Consulta Inicial Gratuita",
           description: "Nuestro equipo revisará tu mensaje y coordinará una consulta sin costo por llamada de WhatsApp o teléfono para entender tus necesidades en detalle.",
         },
         {
-          title: "3. Propuesta Personalizada",
-          description: "Basándonos en nuestra conversación, te enviaremos una propuesta clara con servicios, plazos y costos — sin cargos ocultos ni sorpresas.",
+          title: "Propuesta Personalizada",
+          description: "Basándonos en nuestra conversación, te enviaremos una propuesta clara con servicios, plazos y costos. Sin cargos ocultos ni sorpresas.",
         },
         {
-          title: "4. Nos Encargamos de Todo",
+          title: "Nos Encargamos de Todo",
           description: "Una vez que confirmes, nos ocupamos del proceso completo: documentos, traducciones, trámites gubernamentales y soporte continuo hasta la finalización.",
         },
       ],
@@ -688,7 +688,7 @@ const es: Dictionary = {
     formCta: {
       title: "¿Listo para Dar el Primer Paso?",
       subtitle:
-        "Nuestro equipo está disponible para responder tus preguntas y guiarte en el proceso. Las consultas iniciales siempre son gratuitas — sin compromiso.",
+        "Nuestro equipo está disponible para responder tus preguntas y guiarte en el proceso. Las consultas iniciales siempre son gratuitas, sin compromiso.",
       buttonEmail: "Escríbenos Ahora",
       buttonWhatsApp: "WhatsApp",
     },

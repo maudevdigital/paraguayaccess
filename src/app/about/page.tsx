@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import { LanguageProvider, useLanguage } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -21,11 +22,12 @@ function AboutContent() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-linear-to-br from-blue-800 via-blue-700 to-blue-900">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/3" />
-            <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-400 rounded-full translate-y-1/2 -translate-x-1/3" />
-          </div>
+        <section className="relative overflow-hidden min-h-130 lg:min-h-150 flex items-center">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
+            style={{ backgroundImage: "url('/images/asuncion-aboutus.webp')" }}
+          />
+          <div className="absolute inset-0 bg-black/60" />
 
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-24">
             {/* Breadcrumb */}
@@ -65,26 +67,42 @@ function AboutContent() {
         </section>
 
         {/* Story Section */}
-        <section className="py-20 lg:py-28 bg-white">
+        <section className="py-20 lg:py-28 bg-slate-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto">
-              <span className="inline-block text-sm font-semibold text-blue-700 tracking-wide uppercase mb-3">
-                {a.story.sectionTag}
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-8 leading-tight">
-                {a.story.title}
-              </h2>
-              <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
-                <p>{a.story.p1}</p>
-                <p>{a.story.p2}</p>
-                <p>{a.story.p3}</p>
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <span className="inline-block text-sm font-semibold text-blue-700 tracking-wide uppercase mb-3">
+                  {a.story.sectionTag}
+                </span>
+                <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-8 leading-tight">
+                  {a.story.title}
+                </h2>
+                <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+                  <p>{a.story.p1}</p>
+                  <p>{a.story.p2}</p>
+                  <p>{a.story.p3}</p>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/hero-aboutus.webp"
+                    alt="Asunción, Paraguay"
+                    width={600}
+                    height={450}
+                    className="rounded-2xl object-cover w-full"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-100 rounded-2xl -z-10" />
               </div>
             </div>
           </div>
         </section>
 
         {/* Values Section */}
-        <section className="py-20 lg:py-28 bg-slate-50">
+        <section className="py-20 lg:py-28 bg-linear-to-br from-slate-50 via-blue-50/30 to-slate-100">
+          {/* Decorative accent */}
+          <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-blue-200 to-transparent" />
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <span className="inline-block text-sm font-semibold text-blue-700 tracking-wide uppercase mb-3">
@@ -118,26 +136,38 @@ function AboutContent() {
         </section>
 
         {/* Trust Section */}
-        <section className="py-20 lg:py-28 bg-white">
+        <section className="py-20 lg:py-28 bg-blue-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-12">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="relative order-2 lg:order-1">
+                <div className="relative rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/value-aboutus.webp"
+                    alt="Paraguay Access team values"
+                    width={600}
+                    height={450}
+                    className="rounded-2xl object-cover w-full"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-blue-200 rounded-2xl -z-10" />
+              </div>
+              <div className="order-1 lg:order-2">
                 <span className="inline-block text-sm font-semibold text-blue-700 tracking-wide uppercase mb-3">
                   {a.trust.sectionTag}
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
+                <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-8">
                   {a.trust.title}
                 </h2>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                {a.trust.items.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-slate-50">
-                    <svg className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <p className="text-slate-700 leading-relaxed">{item}</p>
-                  </div>
-                ))}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  {a.trust.items.map((item, i) => (
+                    <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-white">
+                      <svg className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <p className="text-slate-700 leading-relaxed">{item}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

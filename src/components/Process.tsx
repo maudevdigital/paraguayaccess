@@ -12,7 +12,7 @@ export default function Process() {
       {/* Background image with zoom on city */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
-        style={{ backgroundImage: "url('/images/asuncion-skyline.jpg')" }}
+        style={{ backgroundImage: "url('/images/asuncion-skyline.webp')" }}
       />
       {/* Dark gradient overlay for readability */}
       <div className="absolute inset-0 bg-linear-to-br from-black/70 via-slate-900/60 to-black/70" />
@@ -49,7 +49,7 @@ export default function Process() {
 
               <div className="relative rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition-all duration-500 group-hover:-translate-y-1">
                 {/* Step Number */}
-                <div className="text-5xl font-bold text-blue-400/30 mb-4 font-mono">
+                <div className="text-5xl font-bold text-blue-400/30 mb-4">
                   {step.number}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">

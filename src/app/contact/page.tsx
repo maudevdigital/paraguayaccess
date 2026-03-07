@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import { LanguageProvider, useLanguage } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -19,11 +20,12 @@ function ContactContent() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-linear-to-br from-blue-800 via-blue-700 to-blue-900">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/3" />
-            <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-400 rounded-full translate-y-1/2 -translate-x-1/3" />
-          </div>
+        <section className="relative overflow-hidden min-h-130 lg:min-h-150 flex items-center">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
+            style={{ backgroundImage: "url('/images/asuncion-contactus.webp')" }}
+          />
+          <div className="absolute inset-0 bg-black/60" />
 
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-24">
             <nav className="flex items-center gap-2 text-sm text-blue-200 mb-8">
@@ -48,7 +50,7 @@ function ContactContent() {
         </section>
 
         {/* Process Steps */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-slate-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
               <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-700 text-sm font-semibold rounded-full mb-4">
@@ -84,7 +86,7 @@ function ContactContent() {
         </section>
 
         {/* Contact Methods */}
-        <section className="py-20 bg-slate-50">
+        <section className="py-20 bg-linear-to-br from-slate-50 via-blue-50/30 to-slate-100">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -156,11 +158,12 @@ function ContactContent() {
         </section>
 
         {/* What to Include */}
-        <section className="py-20 bg-white">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-            <div className="bg-blue-50 rounded-2xl p-8 sm:p-10">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center flex-shrink-0">
+        <section className="py-20 bg-blue-50">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="bg-white rounded-2xl p-8 sm:p-10">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center flex-shrink-0">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                   </svg>
@@ -179,16 +182,34 @@ function ContactContent() {
                   </li>
                 ))}
               </ul>
-              <p className="text-sm text-slate-500 italic border-t border-blue-100 pt-4">
+              <p className="text-sm text-slate-500 italic border-t border-slate-200 pt-4">
                 {c.info.note}
               </p>
+            </div>
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/equipo-contactus.webp"
+                    alt="Paraguay Access team"
+                    width={600}
+                    height={450}
+                    className="rounded-2xl object-cover w-full"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-200 rounded-2xl -z-10" />
+              </div>
             </div>
           </div>
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 bg-linear-to-br from-blue-800 via-blue-700 to-blue-900">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <section className="relative overflow-hidden py-20">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
+            style={{ backgroundImage: "url('/images/work-contactus.webp')" }}
+          />
+          <div className="absolute inset-0 bg-linear-to-br from-black/65 via-slate-900/55 to-black/65" />
+          <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               {c.formCta.title}
             </h2>

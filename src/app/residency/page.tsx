@@ -132,7 +132,7 @@ function ResidencyContent() {
         </section>
 
         {/* Process Steps */}
-        <section className="py-20 lg:py-28 bg-white">
+        <section className="py-20 lg:py-28 bg-slate-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
@@ -164,7 +164,7 @@ function ResidencyContent() {
         </section>
 
         {/* Pricing Section */}
-        <section className="relative py-20 lg:py-28">
+        <section className="relative py-20 lg:py-28 bg-blue-50">
           {/* Blue banner */}
           <div className="bg-blue-700 py-12 text-center">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -348,14 +348,14 @@ function ResidencyContent() {
         </section>
 
         {/* Info Section */}
-        <section className="py-20 lg:py-28 bg-white">
+        <section className="py-20 lg:py-28 bg-slate-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               {/* Left: Image */}
               <div className="relative">
                 <div className="relative rounded-2xl overflow-hidden">
                   <Image
-                    src="/images/residencia-paraguay.png"
+                    src="/images/residencia-paraguay.webp"
                     alt="Paraguayan Residency Card"
                     width={560}
                     height={420}
@@ -403,7 +403,7 @@ function ResidencyContent() {
 
                 <div className="relative rounded-2xl overflow-hidden max-w-md">
                   <Image
-                    src="/images/equipo-trabajo.png"
+                    src="/images/equipo-trabajo.webp"
                     alt="Paraguay Access team assisting clients"
                     width={500}
                     height={333}
@@ -453,7 +453,7 @@ function ResidencyContent() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 lg:py-28 bg-white">
+        <section className="py-20 lg:py-28 bg-blue-50">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-4 mb-4">

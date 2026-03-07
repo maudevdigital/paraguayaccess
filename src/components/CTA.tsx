@@ -10,7 +10,7 @@ export default function CTA() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
-        style={{ backgroundImage: "url('/images/palacio-lopez.jpg')" }}
+        style={{ backgroundImage: "url('/images/palacio-lopez.webp')" }}
       />
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-linear-to-br from-black/65 via-slate-900/55 to-black/65" />

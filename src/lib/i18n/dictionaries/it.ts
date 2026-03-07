@@ -634,7 +634,7 @@ const it: Dictionary = {
     hero: {
       title: "Parliamo del Tuo Futuro in Paraguay",
       subtitle:
-        "Che tu stia valutando la residenza, abbia bisogno di consulenza fiscale o voglia aprire un'impresa — siamo qui per aiutarti. Scopri di seguito come contattarci e cosa aspettarti.",
+        "Che tu stia valutando la residenza, abbia bisogno di consulenza fiscale o voglia aprire un'impresa, siamo qui per aiutarti. Scopri di seguito come contattarci e cosa aspettarti.",
     },
     process: {
       sectionTag: "Come Funziona",
@@ -642,19 +642,19 @@ const it: Dictionary = {
       subtitle: "Richiedere informazioni o avviare un servizio con noi è semplice. Ecco come funziona:",
       steps: [
         {
-          title: "1. Scrivici",
+          title: "Scrivici",
           description: "Inviaci un'e-mail o un messaggio WhatsApp descrivendo brevemente la tua situazione: nazionalità, obiettivi (residenza, pianificazione fiscale, apertura impresa) e le tue domande.",
         },
         {
-          title: "2. Consulenza Iniziale Gratuita",
+          title: "Consulenza Iniziale Gratuita",
           description: "Il nostro team esaminerà il tuo messaggio e fisserà una consulenza gratuita via chiamata WhatsApp o telefonica per comprendere le tue esigenze nel dettaglio.",
         },
         {
-          title: "3. Proposta Personalizzata",
-          description: "Sulla base della nostra conversazione, ti invieremo una proposta chiara con servizi, tempistiche e costi — senza costi nascosti o sorprese.",
+          title: "Proposta Personalizzata",
+          description: "Sulla base della nostra conversazione, ti invieremo una proposta chiara con servizi, tempistiche e costi. Senza costi nascosti o sorprese.",
         },
         {
-          title: "4. Ci Occupiamo di Tutto",
+          title: "Ci Occupiamo di Tutto",
           description: "Una volta confermato, gestiamo l'intero processo: documenti, traduzioni, pratiche governative e supporto continuo fino alla conclusione.",
         },
       ],
@@ -688,7 +688,7 @@ const it: Dictionary = {
     formCta: {
       title: "Pronto a Fare il Primo Passo?",
       subtitle:
-        "Il nostro team è disponibile per rispondere alle tue domande e guidarti nel processo. Le consulenze iniziali sono sempre gratuite — senza impegno.",
+        "Il nostro team è disponibile per rispondere alle tue domande e guidarti nel processo. Le consulenze iniziali sono sempre gratuite, senza impegno.",
       buttonEmail: "Scrivici Ora",
       buttonWhatsApp: "WhatsApp",
     },

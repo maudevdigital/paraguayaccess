@@ -6,7 +6,9 @@ export default function Testimonials() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative py-24 lg:py-32 bg-slate-50">
+    <section className="relative py-24 lg:py-32 bg-slate-100">
+      {/* Decorative accent */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-slate-300 to-transparent" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">

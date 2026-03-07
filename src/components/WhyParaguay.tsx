@@ -28,7 +28,9 @@ export default function WhyParaguay() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative py-24 lg:py-32 bg-white">
+    <section className="relative py-24 lg:py-32 bg-blue-50">
+      {/* Decorative accent */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-blue-200 to-transparent" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">

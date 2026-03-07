@@ -632,7 +632,7 @@
     hero: {
       title: "Let's Talk About Your Future in Paraguay",
       subtitle:
-        "Whether you're considering residency, need tax advice, or want to set up a business — we're here to help. Below you'll find how to reach us and what to expect.",
+        "Whether you're considering residency, need tax advice, or want to set up a business, we're here to help. Below you'll find how to reach us and what to expect.",
     },
     process: {
       sectionTag: "How It Works",
@@ -640,19 +640,19 @@
       subtitle: "Requesting information or starting a service with us is straightforward. Here's the process:",
       steps: [
         {
-          title: "1. Reach Out",
+          title: "Reach Out",
           description: "Send us an email or a WhatsApp message briefly describing your situation: your nationality, your goals (residency, tax planning, company formation), and any questions you have.",
         },
         {
-          title: "2. Free Initial Consultation",
+          title: "Free Initial Consultation",
           description: "Our team will review your message and schedule a complimentary consultation via WhatsApp call or regular phone call to understand your needs in detail.",
         },
         {
-          title: "3. Personalized Proposal",
-          description: "Based on our conversation, we'll send you a clear proposal with services, timelines, and fees — no hidden costs, no surprises.",
+          title: "Personalized Proposal",
+          description: "Based on our conversation, we'll send you a clear proposal with services, timelines, and fees. No hidden costs, no surprises.",
         },
         {
-          title: "4. We Handle Everything",
+          title: "We Handle Everything",
           description: "Once you confirm, we take care of the entire process: documents, translations, government filings, and ongoing support until completion.",
         },
       ],
@@ -686,7 +686,7 @@
     formCta: {
       title: "Ready to Take the First Step?",
       subtitle:
-        "Our team is available to answer your questions and guide you through the process. Initial consultations are always complimentary — no commitment required.",
+        "Our team is available to answer your questions and guide you through the process. Initial consultations are always complimentary, no commitment required.",
       buttonEmail: "Email Us Now",
       buttonWhatsApp: "WhatsApp Us",
     },

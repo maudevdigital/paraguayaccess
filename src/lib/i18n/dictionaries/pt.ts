@@ -634,7 +634,7 @@ const pt: Dictionary = {
     hero: {
       title: "Vamos Falar Sobre Seu Futuro no Paraguai",
       subtitle:
-        "Esteja considerando a residência, precise de assessoria fiscal ou queira abrir uma empresa — estamos aqui para ajudar. Abaixo você encontra como nos contatar e o que esperar.",
+        "Esteja considerando a residência, precise de assessoria fiscal ou queira abrir uma empresa, estamos aqui para ajudar. Abaixo você encontra como nos contatar e o que esperar.",
     },
     process: {
       sectionTag: "Como Funciona",
@@ -642,19 +642,19 @@ const pt: Dictionary = {
       subtitle: "Solicitar informações ou iniciar um serviço conosco é simples. Veja como funciona:",
       steps: [
         {
-          title: "1. Entre em Contato",
+          title: "Entre em Contato",
           description: "Envie-nos um e-mail ou mensagem de WhatsApp descrevendo brevemente sua situação: sua nacionalidade, seus objetivos (residência, planejamento fiscal, abertura de empresa) e quaisquer dúvidas.",
         },
         {
-          title: "2. Consulta Inicial Gratuita",
+          title: "Consulta Inicial Gratuita",
           description: "Nossa equipe analisará sua mensagem e agendará uma consulta gratuita via chamada de WhatsApp ou telefone para entender suas necessidades em detalhe.",
         },
         {
-          title: "3. Proposta Personalizada",
-          description: "Com base na nossa conversa, enviaremos uma proposta clara com serviços, prazos e custos — sem taxas ocultas ou surpresas.",
+          title: "Proposta Personalizada",
+          description: "Com base na nossa conversa, enviaremos uma proposta clara com serviços, prazos e custos. Sem taxas ocultas ou surpresas.",
         },
         {
-          title: "4. Nós Cuidamos de Tudo",
+          title: "Nós Cuidamos de Tudo",
           description: "Após a confirmação, cuidamos de todo o processo: documentos, traduções, registros governamentais e suporte contínuo até a conclusão.",
         },
       ],
@@ -688,7 +688,7 @@ const pt: Dictionary = {
     formCta: {
       title: "Pronto para Dar o Primeiro Passo?",
       subtitle:
-        "Nossa equipe está disponível para responder suas dúvidas e guiá-lo no processo. Consultas iniciais são sempre gratuitas — sem compromisso.",
+        "Nossa equipe está disponível para responder suas dúvidas e guiá-lo no processo. Consultas iniciais são sempre gratuitas, sem compromisso.",
       buttonEmail: "Envie-nos Agora",
       buttonWhatsApp: "WhatsApp",
     },

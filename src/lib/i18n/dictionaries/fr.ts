@@ -634,7 +634,7 @@ const fr: Dictionary = {
     hero: {
       title: "Parlons de Votre Avenir au Paraguay",
       subtitle:
-        "Que vous envisagiez la résidence, ayez besoin de conseils fiscaux ou souhaitiez créer une entreprise — nous sommes là pour vous aider. Découvrez ci-dessous comment nous contacter et à quoi vous attendre.",
+        "Que vous envisagiez la résidence, ayez besoin de conseils fiscaux ou souhaitiez créer une entreprise, nous sommes là pour vous aider. Découvrez ci-dessous comment nous contacter et à quoi vous attendre.",
     },
     process: {
       sectionTag: "Comment Ça Marche",
@@ -642,19 +642,19 @@ const fr: Dictionary = {
       subtitle: "Demander des informations ou démarrer un service avec nous est simple. Voici le processus :",
       steps: [
         {
-          title: "1. Contactez-Nous",
+          title: "Contactez-Nous",
           description: "Envoyez-nous un e-mail ou un message WhatsApp décrivant brièvement votre situation : votre nationalité, vos objectifs (résidence, planification fiscale, création d'entreprise) et vos questions.",
         },
         {
-          title: "2. Consultation Initiale Gratuite",
+          title: "Consultation Initiale Gratuite",
           description: "Notre équipe examinera votre message et planifiera une consultation gratuite par appel WhatsApp ou téléphone pour comprendre vos besoins en détail.",
         },
         {
-          title: "3. Proposition Personnalisée",
-          description: "Sur la base de notre échange, nous vous enverrons une proposition claire avec services, délais et tarifs — sans frais cachés ni surprises.",
+          title: "Proposition Personnalisée",
+          description: "Sur la base de notre échange, nous vous enverrons une proposition claire avec services, délais et tarifs. Sans frais cachés ni surprises.",
         },
         {
-          title: "4. Nous Gérons Tout",
+          title: "Nous Gérons Tout",
           description: "Une fois confirmé, nous prenons en charge l'intégralité du processus : documents, traductions, démarches administratives et accompagnement continu jusqu'à la finalisation.",
         },
       ],
@@ -688,7 +688,7 @@ const fr: Dictionary = {
     formCta: {
       title: "Prêt à Faire le Premier Pas ?",
       subtitle:
-        "Notre équipe est disponible pour répondre à vos questions et vous accompagner dans le processus. Les consultations initiales sont toujours gratuites — sans engagement.",
+        "Notre équipe est disponible pour répondre à vos questions et vous accompagner dans le processus. Les consultations initiales sont toujours gratuites, sans engagement.",
       buttonEmail: "Écrivez-Nous",
       buttonWhatsApp: "WhatsApp",
     },

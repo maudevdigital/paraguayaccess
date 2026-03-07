@@ -41,7 +41,10 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="relative py-24 lg:py-32 bg-slate-50">
+    <section id="about" className="relative py-24 lg:py-32 bg-linear-to-br from-slate-100 via-blue-50 to-slate-100">
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-blue-200 to-transparent" />
+      <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-blue-100/30 blur-3xl pointer-events-none" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}

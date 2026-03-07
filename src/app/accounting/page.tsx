@@ -57,7 +57,7 @@ function AccountingContent() {
         <section className="relative overflow-hidden min-h-130 lg:min-h-150 flex items-center">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
-            style={{ backgroundImage: "url('/images/palacio-lopez-dos.jpeg')" }}
+            style={{ backgroundImage: "url('/images/palacio-lopez-dos.webp')" }}
           />
           <div className="absolute inset-0 bg-black/60" />
 
@@ -103,7 +103,7 @@ function AccountingContent() {
         </section>
 
         {/* Overview Section */}
-        <section className="py-20 lg:py-28 bg-white">
+        <section className="py-20 lg:py-28 bg-slate-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <div className="inline-flex items-center gap-4 mb-4">
@@ -127,7 +127,7 @@ function AccountingContent() {
         </section>
 
         {/* Services Section */}
-        <section className="py-20 lg:py-28 bg-slate-50">
+        <section className="py-20 lg:py-28 bg-linear-to-br from-slate-50 via-blue-50/30 to-slate-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
@@ -194,7 +194,7 @@ function AccountingContent() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-20 lg:py-28 bg-white">
+        <section className="py-20 lg:py-28 bg-blue-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12">
@@ -222,7 +222,7 @@ function AccountingContent() {
         <section className="relative overflow-hidden py-20 lg:py-28">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
-            style={{ backgroundImage: "url('/images/what-are-payroll-taxes.webp')" }}
+            style={{ backgroundImage: "url('/images/taxes.webp')" }}
           />
           <div className="absolute inset-0 bg-linear-to-br from-black/65 via-slate-900/55 to-black/65" />
 

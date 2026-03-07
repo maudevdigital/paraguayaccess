@@ -49,19 +49,26 @@ function TermsContent() {
         </section>
 
         {/* Content Section */}
-        <section className="py-20 lg:py-28 bg-white">
+        <section className="py-20 lg:py-28 bg-linear-to-b from-slate-50 to-white">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
             <p className="text-sm text-slate-500 mb-12">{tm.lastUpdated}</p>
 
-            <div className="space-y-10">
+            <div className="space-y-8">
               {tm.sections.map((section, i) => (
-                <div key={i}>
-                  <h2 className="text-xl font-bold text-slate-900 mb-3">
-                    {i + 1}. {section.title}
-                  </h2>
-                  <p className="text-slate-600 leading-relaxed">
-                    {section.content}
-                  </p>
+                <div key={i} className="bg-white rounded-2xl border border-slate-100 p-6 sm:p-8 shadow-sm">
+                  <div className="flex items-start gap-4">
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-blue-700 text-white text-sm font-bold flex-shrink-0 mt-0.5">
+                      {i + 1}
+                    </span>
+                    <div>
+                      <h2 className="text-xl font-bold text-slate-900 mb-3">
+                        {section.title}
+                      </h2>
+                      <p className="text-slate-600 leading-relaxed">
+                        {section.content}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
