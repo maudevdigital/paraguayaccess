@@ -112,7 +112,7 @@ function JsonLd({ locale }: { locale: Locale }) {
         contactPoint: [
           {
             "@type": "ContactPoint",
-            telephone: "+595-992-110-955",
+            telephone: "+595-992-110-995",
             contactType: "customer service",
             email: "advisory@paraguayaccess.com",
             availableLanguage: ["English", "Spanish", "Portuguese", "French", "Italian", "Russian", "Greek"],
@@ -155,7 +155,7 @@ function JsonLd({ locale }: { locale: Locale }) {
           latitude: -25.2637,
           longitude: -57.5759,
         },
-        telephone: "+595-992-110-955",
+        telephone: "+595-992-110-995",
         email: "advisory@paraguayaccess.com",
         areaServed: [
           { "@type": "Country", name: "Paraguay" },

@@ -152,10 +152,18 @@ function CompanyFormationContent() {
         </section>
 
         {/* Process Section */}
-        <section className="py-20 lg:py-28 bg-blue-50">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section className="relative py-20 lg:py-28 overflow-hidden">
+          {/* Background image - Asunción skyline */}
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
+            style={{ backgroundImage: "url('/images/asuncion-comofunciona.webp')" }}
+          />
+          {/* Dark gradient overlay for readability */}
+          <div className="absolute inset-0 bg-linear-to-br from-black/75 via-slate-900/65 to-black/75" />
+
+          <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
                 {c.process.title}
               </h2>
             </div>
@@ -164,16 +172,16 @@ function CompanyFormationContent() {
               {c.process.steps.map((step, index) => (
                 <div key={index} className="relative text-center group">
                   {index < c.process.steps.length - 1 && (
-                    <div className="hidden lg:block absolute top-10 left-[60%] w-[80%] h-0.5 bg-blue-100" />
+                    <div className="hidden lg:block absolute top-10 left-[60%] w-[80%] h-0.5 bg-white/20" />
                   )}
 
-                  <div className="relative inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-blue-50 text-blue-700 mb-5 group-hover:bg-blue-700 group-hover:text-white transition-all duration-300 shadow-sm">
+                  <div className="relative inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/15 text-blue-200 mb-5 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-500 transition-all duration-300">
                     {processIcons[index]}
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">
+                  <h3 className="text-lg font-bold text-white mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-sm text-slate-500 leading-relaxed">
+                  <p className="text-sm text-blue-200/70 leading-relaxed">
                     {step.description}
                   </p>
                 </div>

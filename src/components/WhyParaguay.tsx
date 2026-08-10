@@ -65,6 +65,11 @@ export default function WhyParaguay() {
             </div>
           ))}
         </div>
+
+        {/* Legal disclaimer */}
+        <p className="mt-12 max-w-4xl mx-auto text-center text-xs text-slate-500 leading-relaxed">
+          {t.whyParaguay.note}
+        </p>
       </div>
     </section>
   );

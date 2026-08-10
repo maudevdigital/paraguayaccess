@@ -98,7 +98,8 @@ export default function Hero() {
                     opacity="0.7"
                   />
                 </svg>
-              </span>
+              </span>{" "}
+              {t.hero.titleSuffix}
             </h1>
 
             <p className="mt-6 text-base sm:text-lg text-blue-100/80 leading-relaxed max-w-2xl mx-auto">

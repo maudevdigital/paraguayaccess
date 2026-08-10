@@ -17,10 +17,11 @@ const es: Dictionary = {
   },
   hero: {
     badge: "Expertos en Residencia y Cumplimiento Fiscal",
-    title: "Tu Socio Experto en Residencia, RUC y Cumplimiento Fiscal en",
+    title: "Tu Socio en Residencia y Optimización Fiscal en",
     titleHighlight: "Paraguay",
+    titleSuffix: "— 0% de Impuesto sobre Renta Extranjera",
     subtitle:
-      "Ayudamos a personas y empresas a obtener su residencia en Paraguay y cumplir con sus obligaciones fiscales locales. Desde permisos y registro de RUC hasta contabilidad y cumplimiento, nuestro equipo te guía en cada paso.",
+      "Ayudamos a personas y emprendedores a obtener su residencia en Paraguay, establecer su domicilio fiscal y pagar 0% de impuesto sobre renta extranjera, legalmente. Acompañamiento completo de principio a fin.",
     cta: "Contáctenos",
     ctaSecondary: "Descubre Nuestros Servicios",
     stats: {
@@ -110,36 +111,37 @@ const es: Dictionary = {
       "Paraguay ofrece ventajas convincentes para residentes: un sistema tributario territorial, un proceso de residencia ágil y un entorno favorable para negocios que atrae emprendedores de todo el mundo.",
     reasons: [
       {
-        title: "Sistema Fiscal Territorial",
+        title: "0% de impuesto sobre ingresos del exterior",
         description:
-          "Paraguay generalmente grava los ingresos de fuente paraguaya. Como regla general, los ingresos por actividades realizadas fuera de Paraguay quedan fuera del alcance del impuesto a la renta; sin embargo, las reglas de fuente dependen de dónde se realiza la actividad y si los bienes o derechos están ubicados o se usan económicamente en Paraguay.",
+          "Si tus clientes, inversiones o negocios están fuera de Paraguay, no pagas impuesto a la renta en Paraguay. Así de simple. El sistema territorial paraguayo es uno de los más favorables del mundo para emprendedores y nómadas digitales.",
       },
       {
-        title: "Reglas Flexibles de Presencia",
+        title: "Sin obligación de vivir allí todo el año",
         description:
-          "Paraguay no utiliza un test estándar de días anuales como muchos países, pero la residencia migratoria puede perderse tras ausencias injustificadas (12 meses para temporales, 36 para permanentes) bajo la ley vigente. La residencia fiscal es un concepto separado vinculado a criterios de la DNIT.",
+          "No hay un mínimo de días anuales para mantener tu residencia. Puedes seguir viajando y viviendo donde quieras mientras mantienes todos los beneficios fiscales.",
       },
       {
-        title: "Reglas Territoriales de Ganancias de Capital",
+        title: "Tus inversiones en el exterior, libres de impuestos",
         description:
-          "Las ganancias de capital sobre activos de fuente paraguaya generalmente tributan al 8% para personas físicas. Las ganancias sobre activos no paraguayos están generalmente fuera del alcance fiscal paraguayo, sujetas a las reglas de fuente y análisis caso por caso.",
+          "Acciones, cripto, dividendos o cualquier activo fuera de Paraguay — generalmente fuera del alcance fiscal paraguayo.",
       },
       {
-        title: "Proceso de Residencia Ágil",
+        title: "Residencia lista en 35 a 105 días",
         description:
-          "Inicia tu solicitud de residencia en un solo viaje corto, con documentos procesados típicamente entre 35 y 105 días dependiendo de la carga de trabajo de las autoridades. Los plazos son estimados y están sujetos a cambios.",
+          "Todo comienza con un solo viaje corto a Paraguay. Nosotros gestionamos el proceso completo mientras tú sigues con tu vida.",
       },
       {
-        title: "Bajo Costo de Vida",
+        title: "Alta calidad de vida, bajo costo",
         description:
-          "Disfruta de una alta calidad de vida a una fracción del costo comparado con Norteamérica, Europa u otros países sudamericanos.",
+          "Asunción ofrece todo lo que necesitas — restaurantes, coworking, infraestructura moderna — a una fracción del costo de Europa o Norteamérica.",
       },
       {
-        title: "Entorno Favorable para Negocios",
+        title: "10% de impuesto corporativo — uno de los más bajos del mundo",
         description:
-          "Bajas tasas de impuestos corporativos, mínima burocracia y una economía en crecimiento crean excelentes condiciones para emprendedores y empresas de todos los tamaños.",
+          "Crea tu empresa en Paraguay y opera globalmente con una carga fiscal mínima y sin burocracia excesiva.",
       },
     ],
+    note: "Información general con fines orientativos; no constituye asesoramiento legal ni fiscal. El tratamiento tributario depende de la fuente de la renta, de tu situación personal y de tu país de residencia fiscal. La residencia migratoria puede perderse tras ausencias injustificadas (12 meses para la temporal, 36 para la permanente). Los plazos son estimados y dependen de la carga de trabajo de las autoridades. Consúltanos para una evaluación de tu caso.",
   },
   process: {
     sectionTag: "Cómo Funciona",
@@ -430,7 +432,7 @@ const es: Dictionary = {
     terms: "Términos de Servicio",
     email: "advisory@paraguayaccess.com",
     advisoryEmail: "advisory@paraguayaccess.com",
-    phone: "+595 992 110 955",
+    phone: "+595 992 110 995",
     address: "Asunción, Paraguay",
     rights: "Todos los derechos reservados.",
   },
@@ -671,7 +673,7 @@ const es: Dictionary = {
       whatsapp: {
         title: "WhatsApp / Teléfono",
         description: "¿Prefieres una conversación rápida? Escríbenos por WhatsApp o llámanos directamente. Disponibles para mensajes de texto, audio y llamadas.",
-        value: "+595 992 110 955",
+        value: "+595 992 110 995",
         cta: "Abrir WhatsApp",
       },
     },
@@ -799,7 +801,7 @@ const es: Dictionary = {
       },
       {
         title: "Contáctanos",
-        content: "Si tienes alguna pregunta sobre esta política de privacidad o sobre cómo manejamos tus datos, comunícate con nosotros en advisory@paraguayaccess.com o por WhatsApp al +595 992 110 955.",
+        content: "Si tienes alguna pregunta sobre esta política de privacidad o sobre cómo manejamos tus datos, comunícate con nosotros en advisory@paraguayaccess.com o por WhatsApp al +595 992 110 995.",
       },
     ],
   },
@@ -842,7 +844,7 @@ const es: Dictionary = {
       },
       {
         title: "Propiedad Intelectual",
-        content: "Todo el contenido de este sitio web, incluyendo textos, gráficos, logotipos y elementos de diseño, es propiedad de Paraguay Access y está protegido por las leyes de propiedad intelectual aplicables. No puedes reproducir, distribuir ni utilizar ningún contenido de este sitio web sin nuestro consentimiento previo por escrito.",
+        content: "Todo el contenido de este sitio web, incluyendo textos, gráficos, logotipos y elementos de diseño, es propiedad de Paraguay Access y está protegido por las leyes de propiedad intelectual aplicables. No puedes reproducir, distribuir ni utilizar ningún contenido de este sitio web sin nuestro consentimiento previo por escrito. Las fotografías de Asunción utilizadas en este sitio provienen de Wikimedia Commons: torres del WTC, Plaza de las Américas y skyline de Asunción por Cmasi (CC BY-SA 4.0); Palacio de los López por 總統府 (CC BY 2.0).",
       },
       {
         title: "Terminación",
@@ -854,7 +856,7 @@ const es: Dictionary = {
       },
       {
         title: "Contáctanos",
-        content: "Para preguntas sobre estos términos, comunícate con nosotros en advisory@paraguayaccess.com o por WhatsApp al +595 992 110 955.",
+        content: "Para preguntas sobre estos términos, comunícate con nosotros en advisory@paraguayaccess.com o por WhatsApp al +595 992 110 995.",
       },
     ],
   },

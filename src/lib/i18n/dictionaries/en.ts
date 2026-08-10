@@ -15,10 +15,11 @@
   },
   hero: {
     badge: "Residency & Tax Compliance Experts",
-    title: "Your Expert Partner for Residency, RUC & Tax Compliance in",
+    title: "Your Partner for Residency & Tax Optimization in",
     titleHighlight: "Paraguay",
+    titleSuffix: "— 0% Tax on Foreign Income",
     subtitle:
-      "We help individuals and businesses obtain residency in Paraguay and stay compliant with local tax obligations. From permits and RUC registration to accounting and compliance, our team guides you through every step.",
+      "We help individuals and entrepreneurs obtain residency in Paraguay, establish their tax domicile, and pay 0% tax on foreign income, legally. Full support from start to finish.",
     cta: "Get in Touch",
     ctaSecondary: "Discover Our Services",
     stats: {
@@ -108,36 +109,37 @@
       "Paraguay offers compelling advantages for residents: a territorial tax system, a straightforward residency process, and a business-friendly environment that attracts entrepreneurs worldwide.",
     reasons: [
       {
-        title: "Territorial Tax System",
+        title: "0% Tax on Foreign Income",
         description:
-          "Paraguay generally taxes Paraguayan-source income. As a general rule, income from activities performed outside Paraguay is outside Paraguayan income-tax scope; however, source rules depend on where the activity is carried out and whether goods or rights are located or economically used in Paraguay.",
+          "If your clients, investments, or businesses are outside Paraguay, you pay no income tax in Paraguay. It's that simple. Paraguay's territorial system is one of the most favorable in the world for entrepreneurs and digital nomads.",
       },
       {
-        title: "Flexible Presence Rules",
+        title: "No Obligation to Live There Year-Round",
         description:
-          "Paraguay does not use a standard annual-day test like many countries, but migration residence can be lost after unjustified absences (12 months for temporary, 36 for permanent) under current law. Tax residency is a separate concept linked to DNIT criteria.",
+          "There is no minimum number of days per year to maintain your residency. You can keep travelling and living wherever you want while keeping every tax benefit.",
       },
       {
-        title: "Territorial Capital Gains Rules",
+        title: "Your Foreign Investments, Tax-Free",
         description:
-          "Capital gains on Paraguayan-source assets are generally taxed at 8% for individuals. Gains on non-Paraguayan assets are generally outside Paraguayan tax scope, subject to source rules and case-specific analysis.",
+          "Stocks, crypto, dividends, or any asset outside Paraguay — generally outside the reach of Paraguayan tax.",
       },
       {
-        title: "Streamlined Residency Process",
+        title: "Residency Ready in 35 to 105 Days",
         description:
-          "Begin your residency application in a single short trip, with documents typically processed within 35 to 105 days depending on authority workload. Timelines are estimated and subject to change.",
+          "It all starts with a single short trip to Paraguay. We handle the entire process while you get on with your life.",
       },
       {
-        title: "Low Cost of Living",
+        title: "High Quality of Life, Low Cost",
         description:
-          "Enjoy a high quality of life at a fraction of the cost compared to North America, Europe, or other South American countries.",
+          "Asunción offers everything you need — restaurants, coworking, modern infrastructure — at a fraction of the cost of Europe or North America.",
       },
       {
-        title: "Business-Friendly Environment",
+        title: "10% Corporate Tax — One of the Lowest in the World",
         description:
-          "Low corporate tax rates, minimal bureaucracy, and a growing economy create excellent conditions for entrepreneurs and businesses of all sizes.",
+          "Set up your company in Paraguay and operate globally with a minimal tax burden and no excessive bureaucracy.",
       },
     ],
+    note: "General information for guidance only; it does not constitute legal or tax advice. Tax treatment depends on the source of the income, your personal circumstances, and your country of tax residence. Migration residency can be lost after unjustified absences (12 months for temporary, 36 for permanent). Timelines are estimates and depend on authority workload. Contact us for an assessment of your case.",
   },
   process: {
     sectionTag: "How It Works",
@@ -428,7 +430,7 @@
     terms: "Terms of Service",
     email: "advisory@paraguayaccess.com",
     advisoryEmail: "advisory@paraguayaccess.com",
-    phone: "+595 992 110 955",
+    phone: "+595 992 110 995",
     address: "Asunción, Paraguay",
     rights: "All rights reserved.",
   },
@@ -669,7 +671,7 @@
       whatsapp: {
         title: "WhatsApp / Phone",
         description: "Prefer a quick conversation? Message us on WhatsApp or call us directly. Available for text, voice messages, and calls.",
-        value: "+595 992 110 955",
+        value: "+595 992 110 995",
         cta: "Open WhatsApp",
       },
     },
@@ -797,7 +799,7 @@
       },
       {
         title: "Contact Us",
-        content: "If you have any questions about this privacy policy or how we handle your data, please reach out to us at advisory@paraguayaccess.com or via WhatsApp at +595 992 110 955.",
+        content: "If you have any questions about this privacy policy or how we handle your data, please reach out to us at advisory@paraguayaccess.com or via WhatsApp at +595 992 110 995.",
       },
     ],
   },
@@ -840,7 +842,7 @@
       },
       {
         title: "Intellectual Property",
-        content: "All content on this website, including text, graphics, logos, and design elements, is the property of Paraguay Access and is protected by applicable intellectual property laws. You may not reproduce, distribute, or use any content from this website without our prior written consent.",
+        content: "All content on this website, including text, graphics, logos, and design elements, is the property of Paraguay Access and is protected by applicable intellectual property laws. You may not reproduce, distribute, or use any content from this website without our prior written consent. Photographs of Asunción used on this site are sourced from Wikimedia Commons: WTC towers, Plaza de las Américas and the Asunción skyline by Cmasi (CC BY-SA 4.0); Palacio de los López by 總統府 (CC BY 2.0).",
       },
       {
         title: "Termination",
@@ -852,7 +854,7 @@
       },
       {
         title: "Contact Us",
-        content: "For questions about these terms, please contact us at advisory@paraguayaccess.com or via WhatsApp at +595 992 110 955.",
+        content: "For questions about these terms, please contact us at advisory@paraguayaccess.com or via WhatsApp at +595 992 110 995.",
       },
     ],
   },

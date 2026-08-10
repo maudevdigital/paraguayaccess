@@ -1,31 +1,81 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
+type Currency = "USD" | "EUR" | "GBP" | "CAD" | "AUD" | "BRL" | "ARS";
+
+const CURRENCIES: Currency[] = ["USD", "EUR", "GBP", "CAD", "AUD", "BRL", "ARS"];
+
+// PYG per 1 unit of foreign currency. Used for server rendering and as the
+// fallback whenever the live rate lookup below is unavailable.
+// Last reviewed: 2026-08-10 — prices are always billed in PYG.
+const FALLBACK_RATES: Record<Currency, number> = {
+  USD: 5950,
+  EUR: 6875,
+  GBP: 8025,
+  CAD: 4265,
+  AUD: 4200,
+  BRL: 1170,
+  ARS: 3.97,
+};
+
+// Free, key-less endpoint refreshed daily. Returns units of each currency per 1 USD.
+const RATES_ENDPOINT = "https://open.er-api.com/v6/latest/USD";
+
+// Guardrail: ignore obviously broken responses rather than showing a wrong price.
+const MIN_PYG_PER_USD = 3000;
+const MAX_PYG_PER_USD = 20000;
+
 function ResidencyContent() {
   const { t, locale } = useLanguage();
   const r = t.residencyPage;
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
-  type Currency = "USD" | "EUR" | "GBP" | "CAD" | "AUD" | "BRL" | "ARS";
   const [tempCurrency, setTempCurrency] = useState<Currency>("EUR");
   const [permCurrency, setPermCurrency] = useState<Currency>("EUR");
 
-  // Approximate PYG per 1 unit of foreign currency (indicative rates)
-  const exchangeRates: Record<Currency, number> = {
-    USD: 7800,
-    EUR: 8300,
-    GBP: 9800,
-    CAD: 5500,
-    AUD: 5000,
-    BRL: 1350,
-    ARS: 7.5,
-  };
+  const [exchangeRates, setExchangeRates] = useState<Record<Currency, number>>(FALLBACK_RATES);
+
+  // Refresh the conversion rates on load so the "≈" prices never go stale.
+  // Any failure leaves FALLBACK_RATES in place.
+  useEffect(() => {
+    const controller = new AbortController();
+
+    fetch(RATES_ENDPOINT, { signal: controller.signal })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        const rates = data?.rates;
+        const pygPerUsd = rates?.PYG;
+
+        if (
+          typeof pygPerUsd !== "number" ||
+          pygPerUsd < MIN_PYG_PER_USD ||
+          pygPerUsd > MAX_PYG_PER_USD
+        ) {
+          return;
+        }
+
+        const next = {} as Record<Currency, number>;
+        for (const currency of CURRENCIES) {
+          // The feed is USD-based, so USD itself has no entry.
+          const perUsd = currency === "USD" ? 1 : rates[currency];
+          if (typeof perUsd !== "number" || perUsd <= 0) return;
+          next[currency] = pygPerUsd / perUsd;
+        }
+
+        setExchangeRates(next);
+      })
+      .catch(() => {
+        /* offline, blocked or malformed - keep the fallback rates */
+      });
+
+    return () => controller.abort();
+  }, []);
 
   const currencySymbols: Record<Currency, string> = {
     USD: "$",
@@ -37,7 +87,7 @@ function ResidencyContent() {
     ARS: "ARS$",
   };
 
-  const currencies: Currency[] = ["USD", "EUR", "GBP", "CAD", "AUD", "BRL", "ARS"];
+  const currencies = CURRENCIES;
 
   const TEMP_PYG = 17_000_000;
   const PERM_PYG = 29_750_000;

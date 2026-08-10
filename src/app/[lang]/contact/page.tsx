@@ -122,7 +122,7 @@ function ContactContent() {
 
               {/* WhatsApp Card */}
               <a
-                href="https://wa.me/595992110955"
+                href="https://wa.me/595992110995"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex flex-col items-center text-center p-8 rounded-2xl bg-white border border-slate-100 hover:border-green-200 hover:shadow-xl hover:shadow-green-50 transition-all duration-300"
@@ -222,7 +222,7 @@ function ContactContent() {
                 {c.formCta.buttonEmail}
               </a>
               <a
-                href="https://wa.me/595992110955"
+                href="https://wa.me/595992110995"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-500 text-white font-semibold rounded-xl hover:bg-green-600 transition-colors shadow-lg"
