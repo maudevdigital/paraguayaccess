@@ -844,7 +844,7 @@ const es: Dictionary = {
       },
       {
         title: "Propiedad Intelectual",
-        content: "Todo el contenido de este sitio web, incluyendo textos, gráficos, logotipos y elementos de diseño, es propiedad de Paraguay Access y está protegido por las leyes de propiedad intelectual aplicables. No puedes reproducir, distribuir ni utilizar ningún contenido de este sitio web sin nuestro consentimiento previo por escrito. Las fotografías de Asunción utilizadas en este sitio provienen de Wikimedia Commons: torres del WTC, Plaza de las Américas y skyline de Asunción por Cmasi (CC BY-SA 4.0); Palacio de los López por 總統府 (CC BY 2.0).",
+        content: "Todo el contenido de este sitio web, incluyendo textos, gráficos, logotipos y elementos de diseño, es propiedad de Paraguay Access y está protegido por las leyes de propiedad intelectual aplicables. No puedes reproducir, distribuir ni utilizar ningún contenido de este sitio web sin nuestro consentimiento previo por escrito. Las fotografías de Asunción utilizadas en este sitio provienen de Wikimedia Commons: torres del WTC, Plaza de las Américas y vistas del centro de Asunción por Cmasi (CC BY-SA 4.0); Palacio de los López por 總統府 (CC BY 2.0).",
       },
       {
         title: "Terminación",

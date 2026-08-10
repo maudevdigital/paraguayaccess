@@ -844,7 +844,7 @@ const pt: Dictionary = {
       },
       {
         title: "Propriedade Intelectual",
-        content: "Todo o conteúdo deste site, incluindo textos, gráficos, logotipos e elementos de design, é propriedade do Paraguay Access e está protegido pelas leis de propriedade intelectual aplicáveis. Você não pode reproduzir, distribuir ou utilizar qualquer conteúdo deste site sem nosso consentimento prévio por escrito. As fotografias de Assunção utilizadas neste site provêm do Wikimedia Commons: torres do WTC, Plaza de las Américas e skyline de Assunção por Cmasi (CC BY-SA 4.0); Palacio de los López por 總統府 (CC BY 2.0).",
+        content: "Todo o conteúdo deste site, incluindo textos, gráficos, logotipos e elementos de design, é propriedade do Paraguay Access e está protegido pelas leis de propriedade intelectual aplicáveis. Você não pode reproduzir, distribuir ou utilizar qualquer conteúdo deste site sem nosso consentimento prévio por escrito. As fotografias de Assunção utilizadas neste site provêm do Wikimedia Commons: torres do WTC, Plaza de las Américas e vistas do centro de Assunção por Cmasi (CC BY-SA 4.0); Palacio de los López por 總統府 (CC BY 2.0).",
       },
       {
         title: "Rescisão",

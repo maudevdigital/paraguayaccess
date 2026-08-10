@@ -844,7 +844,7 @@ const fr: Dictionary = {
       },
       {
         title: "Propriété Intellectuelle",
-        content: "Tout le contenu de ce site web, y compris les textes, graphiques, logos et éléments de design, est la propriété de Paraguay Access et est protégé par les lois applicables en matière de propriété intellectuelle. Vous ne pouvez pas reproduire, distribuer ou utiliser tout contenu de ce site web sans notre consentement écrit préalable. Les photographies d'Asunción utilisées sur ce site proviennent de Wikimedia Commons : tours du WTC, Plaza de las Américas et panorama d'Asunción par Cmasi (CC BY-SA 4.0) ; Palacio de los López par 總統府 (CC BY 2.0).",
+        content: "Tout le contenu de ce site web, y compris les textes, graphiques, logos et éléments de design, est la propriété de Paraguay Access et est protégé par les lois applicables en matière de propriété intellectuelle. Vous ne pouvez pas reproduire, distribuer ou utiliser tout contenu de ce site web sans notre consentement écrit préalable. Les photographies d'Asunción utilisées sur ce site proviennent de Wikimedia Commons : tours du WTC, Plaza de las Américas et vues du centre d'Asunción par Cmasi (CC BY-SA 4.0) ; Palacio de los López par 總統府 (CC BY 2.0).",
       },
       {
         title: "Résiliation",

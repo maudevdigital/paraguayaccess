@@ -170,19 +170,33 @@ function AccountingContent() {
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {a.taxHighlights.items.map((item, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-5xl sm:text-6xl font-extrabold text-white mb-2">
-                    {item.value}
+              {a.taxHighlights.items.map((item, index) => {
+                // Most values are short figures ("10%", "8–10%") and carry the
+                // display size well. A few are words instead ("Territorial",
+                // "Территориальный") and overflow the grid cell at that size,
+                // so they get a smaller step plus wrapping as a safety net.
+                const isWord = item.value.length > 6;
+
+                return (
+                  <div key={index} className="text-center min-w-0">
+                    <div
+                      className={`${
+                        isWord
+                          ? "text-2xl sm:text-3xl lg:text-4xl"
+                          : "text-5xl sm:text-6xl"
+                      } font-extrabold text-white mb-2 wrap-break-word hyphens-auto`}
+                    >
+                      {item.value}
+                    </div>
+                    <div className="text-sm font-semibold text-blue-200 uppercase tracking-wider mb-2">
+                      {item.label}
+                    </div>
+                    <p className="text-xs text-blue-300 leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
-                  <div className="text-sm font-semibold text-blue-200 uppercase tracking-wider mb-2">
-                    {item.label}
-                  </div>
-                  <p className="text-xs text-blue-300 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
@@ -216,7 +230,7 @@ function AccountingContent() {
         <section className="relative overflow-hidden py-20 lg:py-28">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
-            style={{ backgroundImage: "url('/images/taxes.webp')" }}
+            style={{ backgroundImage: "url('/images/asuncion-contabilidad.webp')" }}
           />
           <div className="absolute inset-0 bg-linear-to-br from-black/65 via-slate-900/55 to-black/65" />
 

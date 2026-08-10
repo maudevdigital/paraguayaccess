@@ -842,7 +842,7 @@
       },
       {
         title: "Intellectual Property",
-        content: "All content on this website, including text, graphics, logos, and design elements, is the property of Paraguay Access and is protected by applicable intellectual property laws. You may not reproduce, distribute, or use any content from this website without our prior written consent. Photographs of Asunción used on this site are sourced from Wikimedia Commons: WTC towers, Plaza de las Américas and the Asunción skyline by Cmasi (CC BY-SA 4.0); Palacio de los López by 總統府 (CC BY 2.0).",
+        content: "All content on this website, including text, graphics, logos, and design elements, is the property of Paraguay Access and is protected by applicable intellectual property laws. You may not reproduce, distribute, or use any content from this website without our prior written consent. Photographs of Asunción used on this site are sourced from Wikimedia Commons: WTC towers, Plaza de las Américas and views of downtown Asunción by Cmasi (CC BY-SA 4.0); Palacio de los López by 總統府 (CC BY 2.0).",
       },
       {
         title: "Termination",
