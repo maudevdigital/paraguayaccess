@@ -158,8 +158,11 @@ function CompanyFormationContent() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-fixed"
             style={{ backgroundImage: "url('/images/asuncion-comofunciona.webp')" }}
           />
-          {/* Dark gradient overlay for readability */}
-          <div className="absolute inset-0 bg-linear-to-br from-black/75 via-slate-900/65 to-black/75" />
+          {/* Dark gradient overlay for readability. The section is much taller
+              on small screens, so bg-cover zooms the photo and the lit building
+              facades end up behind the step text - hence the heavier overlay
+              below lg, where the steps stack into a single column. */}
+          <div className="absolute inset-0 bg-linear-to-br from-black/85 via-slate-900/80 to-black/85 lg:from-black/75 lg:via-slate-900/65 lg:to-black/75" />
 
           <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
@@ -181,7 +184,7 @@ function CompanyFormationContent() {
                   <h3 className="text-lg font-bold text-white mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-sm text-blue-200/70 leading-relaxed">
+                  <p className="text-sm text-blue-100/85 lg:text-blue-200/70 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
