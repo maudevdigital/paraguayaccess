@@ -17,6 +17,10 @@ const SITE_URL = "https://paraguayaccess.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  // Google Search Console site verification
+  verification: {
+    google: "3OD6Oihv0B9QSKiBAeMhEV8V6AvSFmf412bbhz2ydoE",
+  },
   icons: {
     icon: [
       { url: "/images/logo-blue.png", type: "image/png", sizes: "any" },
