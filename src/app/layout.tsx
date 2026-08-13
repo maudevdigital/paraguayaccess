@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   // Google Search Console site verification
   verification: {
-    google: "3OD6Oihv0B9QSKiBAeMhEV8V6AvSFmf412bbhz2ydoE",
+    google: "yp1MiDurof6z9ouunHThEXiwPoMvvgtGkFGyZmP5nlI",
   },
   icons: {
     icon: [
